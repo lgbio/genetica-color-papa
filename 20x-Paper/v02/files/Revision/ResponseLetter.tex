@@ -1,0 +1,149 @@
+\documentclass{article}
+\usepackage{xcolor}
+\usepackage{graphicx}
+
+\newenvironment{indented}{\addtolength{\leftskip}{2em}}{\par}
+
+\title{\textbf{Response Letter}\\ Harnessing the Genetic Diversity of the Colombian Central Collection of Potatoes to Dissect Pigmentation Genetics in Andigenum Landraces}    
+
+\author{Luis Garreta\textsuperscript{1,3} \and Zahara L. Lasso-Paredes\textsuperscript{2} \and Jhon A. Berdugo-Cely \textsuperscript{3} \and Ivania Cerón-Souza\textsuperscript{3} \and Paula H. Reyes-Herrera\textsuperscript{3,*} }
+\date{
+  $^{1}$Grupo de Investigación Bioinformática y Biocomputación, Universidad del Valle, Cali, Colombia \\
+  $^{2}$Corporación Colombiana de Investigación Agropecuaria AGROSAVIA, Sede Central,  Bogotá, Colombia \\
+  $^{3}$Corporación Colombiana de Investigación Agropecuaria AGROSAVIA, CI Tibaitatá,  Bogotá, Colombia \\
+  $*$ Corresponding author: phreyes@gmail.com\\
+  \today
+}
+
+
+
+
+
+
+
+\begin{document}
+\maketitle
+
+We thank the reviewers for their constructive comments and suggestions, which have helped us strengthen the clarity, depth, and overall quality of the manuscript. In response, we have revised the paper accordingly. The main adjustments are summarized below:
+
+\begin{itemize}
+  \item \textbf{Introduction:} Improved flow and added supporting references
+  \item \textbf{Methods:} Added a workflow figure and expanded methodological details, including model architectures, preprocessing, and hyperparameter tuning.
+  \item \textbf{Results \& Discussion:} Clarified MSE variability (Fe), added descriptive statistics and figures.
+  \item \textbf{Contextualization:} Strengthened discussion by comparing with prior studies, linking regional differences to geology, and highlighting methodological contributions.
+\end{itemize}
+
+
+At the end of the response letter, we included the revised article with color highlights to indicate changes. \textcolor{green!50!black}{Green denotes added text}, while \textcolor{red}{red denotes modified text}.
+%Please take into account the corrections requested by the reviewers before submitting the final version of the article checking that the manuscript follows the Springer LNCS format. You should revise your manuscript accordingly and return three separate files:
+%(1) Response letter explaining the changes done to the manuscript
+%(2) Final camera ready version of the manuscript including author information on PDF format 
+%(3) Source files in a zip folder 
+%These should be uploaded in the platform before 02/10/2025.
+
+\section{Review 1 (Revision)}
+
+   
+
+\subsection{“Resume” – needs to be changed to “Abstract”}
+
+\textcolor{blue}{ANSWER: Done. The language package was set to Spanish, so the automatic section headings, figure captions, and table labels were in Spanish. We've fixed this in the current version.}
+\subsection{ Introduction section:}
+\begin{enumerate}
+    \item Paragraph starting with “In contrast” should be removed (see comment in document).\\\\
+    \textcolor{blue}{ANSWER: We replaced "In contrast" with "Parallel to these advances in phenotyping" to better reflect the relationship between the two paragraphs. The first paragraph presents developments in color phenotyping, while the second presents advances in genetic research on potatoes. }
+    \item Paragraph stating the composition of the CCC should indicate how many accessions are tetraploid and how many accessions correspond to other ploidy levels.\\\\
+    \textcolor{blue}{ANSWER: I modified that paragraph to the following:}
+    \textcolor{blue}{The field collection included 1,255 genetically diverse accessions, primarily landraces. The collection comprised 67.17\% tetraploid \textit{Solanum tuberosum} group \textit{Andigenum}, 21.83\% diploid \textit{Phureja}, and 5.9\% tetraploid \textit{Chilotanum} }
+    \item Figura 1 – should say “Figure” and should be referenced in main the text.\\\\
+    \textcolor{blue}{ANSWER: Thanks for noting this. The figure is referenced where the CCC's color diversity is mentioned.}
+\end{enumerate}
+
+
+\subsection{Materials and Methods:}
+\begin{enumerate}
+    \item Figure 2A is unnecessary for the scope of the manuscript. I suggest removing it, also remove its reference from the text.\\\\
+    \textcolor{blue}{ANSWER: Done.}
+    \item For the “Phenotypic data” section : it should explain clearly why only 599 accessions were evaluated. Also, how many accessions, what traits and what years were evaluated should be summarized on a table as it will be easier for the reader. The way is currently written is very difficult to follow.\\\\
+    
+    \textcolor{blue}{ANSWER: }
+\begin{table}[!h]
+    \centering
+    \begin{tabular}{|c|c|c|}
+    \hline
+    
+      Year   & Traits evaluated & Number of accessions \\\hline
+       2017  &  & \\
+       2018  &  & \\
+       2019  &  & \\\hline 
+    \end{tabular}
+   
+    \caption{Caption}
+    \label{tab:placeholder}
+\end{table}
+
+    
+    \item For the “Linking Color to Nutritional and Nutraceutical Variables” section: The nutraceutical traits information should be added to the FS2\_Phenotypes table in Supplementary Information. It should not be left to the reader to look find and connect that information if results of that correlation analysis are presented as part of this research.\\\\
+    \textcolor{blue}{ANSWER: Done. It has been referenced in the Data Availability section.}
+    \item In GWAS analysis section: GWASpoly and GAPIT need citations.\\\\
+    \textcolor{blue}{ANSWER: Done}
+\end{enumerate}
+
+\subsection{Results:}
+\begin{enumerate}
+    \item In the first paragraph the authors mentioned that “no outliers were detected” – outlier test should be described and cited on methos section.\\\\
+    \textcolor{blue}{ANSWER: XXX}
+    \item As the authors mentioned that higher-altitude might induce secondary coloration, how can GxE (altitude) factors can be separated from genetic factors if only a single altitude was used for color evaluations? This needs to be addressed and discussed by the authors.\\\\
+\textcolor{blue}{ANSWER: While our study was conducted at a single altitude with fixed environmental conditions for each evaluation period, we employed several approaches to address potential genotype-by-environment (GxE) interactions and distinguish genetic from environmental effects. First, we selected traits showing high correlation ($>$0.6) between independent evaluations conducted in different years at the same altitude, as weak correlations would indicate stronger environmental influence. Second, we calculated broad-sense heritability for all traits to quantify the proportion of phenotypic variation attributable to genetic factors. Heritability estimates varied considerably across traits: three traits showed heritability $>$0.55, indicating predominantly genetic control; three traits had heritability between 0.3 and 0.55, suggesting both genetic and environmental contributions; and one trait showed heritability $<$0.2, indicating minimal genetic influence. While this approach allowed us to identify genetic variation underlying color traits under these specific environmental conditions, we acknowledge that evaluations at different altitudes could reveal additional genes and GxE interactions not captured in this study.\\}
+\textcolor{blue}{We added a paragraph addressing this limitation in the discussion under the new subsection \textbf{Limitations and Future Directions}}
+
+    
+%    \textcolor{blue}{ANSWER: The CCC collection underwent color evaluation using the RHS scale, with a previous evaluation conducted using the color descriptors from Gomez et al. (2020). While both evaluations were performed at the same altitude, environmental variation still occurred due to yearly climatic differences. We specifically searched for traits showing high correlations between evaluations, as weak correlations could indicate greater environmental influence relative to genetic factors. We selected traits with correlations higher than 0.6 for the genetic study—seven out of nine traits were included, while two were excluded (Section 3.1)\\}
+ %   \textcolor{blue}{We acknowledge that phenotypic variation could be attributed to environmental rather than genetic factors. To address this, we calculated heritability to measure how much phenotypic variation can be explained by genomic differences captured in our markers. Heritability was estimated using all markers in the study, as some traits may be influenced by single genes while others are controlled by multiple genes. Heritability varied across traits and even among different components of the same trait (Section 3.3). Three traits showed heritability > 0.55, indicating a significant genetic role. Three additional traits had most components with heritability between 0.3 and 0.6, suggesting genetic influence with important environmental contributions. Finally, one trait had all components below 0.2, indicating a weak genetic role.\\}
+%\textcolor{blue}{The color evaluations were conducted at the same altitude with each trait assessed in the same year for all accessions. In this study, the environment is held constant for each trait while we identify genomic variability explaining the observed color phenotypes under these conditions. However, we acknowledge that evaluations at different altitudes could produce different phenotypes, potentially revealing novel genes beyond those identified here. }
+    \item “Figura 3” – needs to say “Figure 3”\\\\
+    \textcolor{blue}{ANSWER: Done}
+    \item In Section 3.1.1 “Linking Color to Nutritional and Nutraceutical Variables” section – the variables need to be explicitly mentioned. I suggested adding this information to one of the supplementary table. Also, FRAO and DPPH assays need citations.\\\\
+    \textcolor{blue}{ANSWER: Variables were explicitly mentioned in section 2.2.2, where we have added the missing citations. Also, We added a supplementary file with the data used. }
+    \item In Section 3.2 GWAS analysis: A polymorphism in the marker does not necessarily indicates that is the gene for the phenotype you are observing. It just indicate is within the chromosomal region detected to be significant. The authors have found previous references to some specific markers but the results need to be presented and discussed within the context of the entire region.\\\\
+    \textcolor{blue}{ANSWER: We agree the marker indicates there is a region}
+    \item Figura 4 needs to say “Figure 4”\\\\
+    \textcolor{blue}{ANSWER: Done}
+    \item In the last paragraph of the section: Moreover, GWASpoly and GAPIT identified 14 and 12 significant SNPs, respectively, with six SNPs jointly detected by both tools, representing 28.57\% of the total. Although no SNPs were shared across different traits, four SNPs were associated with distinct LCH components within the same trait.” How do these SNPs relate to the 21 SNPs previously found? Please clarify.\\\\
+    \textcolor{blue}{ANSWER: }
+    
+\end{enumerate}
+
+
+\subsection{Discussion section}
+
+\begin{enumerate}
+    \item The discussion should be mainly centered on the results obtained and how it relate to previous findings as well as some of the extended implications. In the discussion section as currently written there authors center mostly on the implications related to conservation and revaluation of the genetic resources. This is important but should not take most of the discussion section. I suggest re-centering the discussion on the results they obtained, what other similar works have been published before, how can it be improved and then yes touch on the implications on conservation in a single paragraph.\\\\
+    \textcolor{blue}{ANSWER: XXX}
+    \item Sections 4.1 and 4.2 should be consolidated as a single paragraph of “Future perspectives”. \\
+    \textcolor{blue}{ANSWER:Ok}
+
+\end{enumerate}
+
+
+
+\subsection{Conclusion section}
+
+\begin{enumerate}
+    \item Paragraph “However, consumer acceptance remains a significant barrier despite their superior nutritional profiles, necessitating educational initiatives and market development strategies that recognize both cultural and nutritional values” It is a known problem, however, this is not a metric that has been measured in your study. So it should not be a conclusion of the study, although it could be mentioned in the discussion section.\\\\
+    \textcolor{blue}{ANSWER: Ok.}
+\end{enumerate}
+
+
+\subsection{“Referencias” should be “References”}
+    \textcolor{blue}{ANSWER: Done.}
+
+
+
+\subsection{Attachment(s):}
+    \textcolor{blue}{ANSWER: Attached is a PDF file with responses to each comment.}
+
+
+
+
+\end{document}

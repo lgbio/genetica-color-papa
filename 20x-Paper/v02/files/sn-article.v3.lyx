@@ -1,0 +1,8363 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass sn-jnl
+\begin_preamble
+%Version 3 December 2023
+% See section 11 of the User Manual for version history
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                 %%
+%% Please do not use \input{...} to include other tex files.       %%
+%% Submit your LaTeX manuscript as one .tex document.              %%
+%%                                                                 %%
+%% All additional figures and files should be attached             %%
+%% separately and not embedded in the \TeX\ document itself.       %%
+%%                                                                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%\documentclass[referee,sn-basic]{sn-jnl}% referee option is meant for double line spacing
+
+%%=======================================================%%
+%% to print line numbers in the margin use lineno option %%
+%%=======================================================%%
+
+%%\documentclass[lineno,sn-basic]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
+
+%%======================================================%%
+%% to compile with pdflatex/xelatex use pdflatex option %%
+%%======================================================%%
+
+%%\documentclass[pdflatex,sn-basic]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
+
+
+%%Note: the following reference styles support Namedate and Numbered referencing. By default, the style follows the most common one. To switch between the options you can add or remove Numbered in the optional parenthesis. 
+%%The option is available for: sn-basic.bst, sn-vancouver.bst, sn-chicago.bst%  
+ 
+%%\documentclass[pdflatex,sn-nature]{sn-jnl}% Style for submissions to Nature Portfolio journals
+%%\documentclass[pdflatex,sn-basic]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
+%\documentclass[pdflatex,sn-mathphys-num]{sn-jnl}% Math and Physical Sciences Numbered Reference Style 
+% Math and Physical Sciences Author Year Reference Style
+%%\documentclass[pdflatex,sn-aps]{sn-jnl}% American Physical Society (APS) Reference Style
+%%\documentclass[pdflatex,sn-vancouver,Numbered]{sn-jnl}% Vancouver Reference Style
+%%\documentclass[pdflatex,sn-apa]{sn-jnl}% APA Reference Style 
+%%\documentclass[pdflatex,sn-chicago]{sn-jnl}% Chicago-based Humanities Reference Style
+
+%%%% Standard Packages
+%%<additional latex packages if required can be included here>
+
+\usepackage{multirow}\usepackage{amsfonts}\usepackage{amsthm}\usepackage{mathrsfs}\usepackage[title]{appendix}%\usepackage{xcolor}%
+\usepackage{textcomp}\usepackage{manyfoot}\usepackage{booktabs}\usepackage{algorithm}\usepackage{algorithmicx}\usepackage{algpseudocode}\usepackage{listings}%\usepackage[dvipsnames]{xcolor} % Temporal: Cambiar color texto parrafos
+\usepackage{ulem}% Temporal: Para subrayar texto parrafos
+\usepackage[table,xcdraw,dvipsnames]{xcolor}
+\usepackage{pdflscape}
+% Latin Modern fonts
+\usepackage[scr]{rsfso}
+\usepackage{fix-cm}
+
+
+
+
+
+ %%%%
+
+%%%%%=============================================================================%%%%
+%%%%  Remarks: This template is provided to aid authors with the preparation
+%%%%  of original research articles intended for submission to journals published 
+%%%%  by Springer Nature. The guidance has been prepared in partnership with 
+%%%%  production teams to conform to Springer Nature technical requirements. 
+%%%%  Editorial and presentation requirements differ among journal portfolios and 
+%%%%  research disciplines. You may find sections in this template are irrelevant 
+%%%%  to your work and are empowered to omit any such section if allowed by the 
+%%%%  journal you intend to submit to. The submission guidelines and policies 
+%%%%  of the journal take precedence. A detailed User Manual is available in the 
+%%%%  template package for technical guidance.
+%%%%%=============================================================================%%%%
+
+%% as per the requirement new theorem styles can be included as shown below
+%\theoremstyle{thmstyleone}%
+\newtheorem{theorem}{Theorem}\newtheorem{proposition}[theorem]{Proposition}\newtheorem{example}{Example}\newtheorem{remark}{Remark}\newtheorem{definition}{Definition}\usepackage[spanish,english]{babel}
+\raggedbottom
+%%\unnumbered% uncomment this for unnumbered level heads
+\end_preamble
+\options pdflatex,sn-mathphys-ay
+\use_default_options false
+\begin_modules
+fix-cm
+theorems-ams
+\end_modules
+\maintain_unincluded_children no
+\language english
+\language_package default
+\inputencoding utf8
+\fontencoding T1
+\font_roman "charter" "default"
+\font_sans "default" "default"
+\font_typewriter "lmodern" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Title
+[
+\end_layout
+
+\begin_layout Standard
+Pigmentation Genetics in the CCC Potato Collection]
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Harnessing the Genetic Diversity of the Colombian Central Collection of Potatoes to Dissect Pigmentation Genetics in 
+\shape italic
+Andigenum
+\shape default
+ Landraces
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%Otra opción
+\end_layout
+
+\begin_layout Plain Layout
+
+%Dissecting Pigmentation in Colombian Potato Landraces:
+ GWAS and Genomic Prediction in the Andigenum Group
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%Dissecting the Genetic Basis of Pigmentation in Andigenum Potatoes Using Genome-Wide Association Studies
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%Color Trait Diversity in Andigenum Potatoes from the Colombian Central Collection:
+ Evidence of High genomic Heritability and Predictive Ability
+\end_layout
+
+\begin_layout Plain Layout
+
+%%=============================================================%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%% GivenName	-> 
+\backslash
+fnm{Joergen W.}
+\end_layout
+
+\begin_layout Plain Layout
+
+%% Particle	-> 
+\backslash
+spfx{van der} -> surname prefix
+\end_layout
+
+\begin_layout Plain Layout
+
+%% FamilyName	-> 
+\backslash
+sur{Ploeg}
+\end_layout
+
+\begin_layout Plain Layout
+
+%% Suffix	-> 
+\backslash
+sfx{IV}
+\end_layout
+
+\begin_layout Plain Layout
+
+%% 
+\backslash
+author*[1,2]{
+\backslash
+fnm{Joergen W.} 
+\backslash
+spfx{van der} 
+\backslash
+sur{Ploeg} 
+\end_layout
+
+\begin_layout Plain Layout
+
+%%  
+\backslash
+sfx{IV}}
+\backslash
+email{iauthor@gmail.com}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%=============================================================%%
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+[
+\end_layout
+
+\begin_layout Standard
+1,3]
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+fnm
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Luis
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+sur
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Garreta
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+[
+\end_layout
+
+\begin_layout Standard
+2]
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+fnm
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Zahara L.
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+sur
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Lasso-Paredes
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+[
+\end_layout
+
+\begin_layout Standard
+1]
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+fnm
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Jhon A.
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+sur
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Berdugo-Cely
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+[
+\end_layout
+
+\begin_layout Standard
+1]
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+fnm
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Ivania
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+sur
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Cerón-Souza
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+*
+\end_layout
+
+\begin_layout Standard
+[1]
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+fnm
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Paula H.
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+sur
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Reyes-Herrera
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+email
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+phreyes@gmail.com
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+affil
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+1
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+orgdiv
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+CI Tibaitatá
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+,
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+orgname
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Corporación Colombiana de Investigación Agropecuaria (AGROSAVIA)
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+,
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+orgaddress
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+street
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Km 14 via Mosquera
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+,
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+city
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Bogotá
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+,
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+postcode
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+250047
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+,
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+state
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Cundinamarca
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+,
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+country
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Colombia
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+affil
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+2
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+orgdiv
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+CI Sede Central
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+,
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+orgname
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Corporación Colombiana de Investigación Agropecuaria (AGROSAVIA)
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+,
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+orgaddress
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+street
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Km 14 via Mosquera
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+,
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+city
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Bogotá
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+,
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+postcode
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+250047
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+,
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+state
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Cundinamarca
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+,
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+country
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Colombia
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+affil
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+3
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+orgdiv
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Current address:
+ Grupo de Investigación Bioinformática y Biocomputación 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+,
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+orgname
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Universidad del Valle
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+,
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+city
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Cali
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+,
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+postcode
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+760042
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+,
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+state
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Valle del Cauca
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+,
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+country
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Colombia
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%%==================================%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%% Sample for unstructured abstract %%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%==================================%%
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+abstract
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+The Colombian Central Collection of potatoes (CCC) is one of the most diverse germplasm resources in the country and a primary source of genetic variability for breeding.
+ Approximately 67% of its accessions belong to the 
+\shape italic
+Andigenum
+\shape default
+ group,
+ which exhibits remarkable color diversity and associated nutraceutical potential.
+ However,
+ the genetic architecture of the color traits in this group remains poorly understood.
+ In this study,
+ we analyzed historical phenotypic data to explore the genetic basis of pigmentation in 
+\shape italic
+Andigenum
+\shape default
+ accessions from the CCC.
+ Color traits across tuber skin,
+ tuber flesh,
+ flowers,
+ stems,
+ and sprouts were assessed using the Royal Horticultural Society Color Chart,
+ and Genome-Wide Association Studies (GWAS) and genomic prediction were performed using high-density SNP markers.
+ We identified 21 significant SNP–trait associations,
+ with 12 overlapping or located near loci previously reported for pigmentation or tuber-related traits,
+ whereas the remainder represented novel associations.
+ Several color traits showed moderate to high heritability (
+\begin_inset Formula $h^{2}$
+\end_inset
+
+ 
+\begin_inset Formula $>$
+\end_inset
+
+ 0.55),
+ and genomic prediction achieved predictive abilities of up to 0.84 for flower primary color and 0.71 for stem color.
+ We conclude that these findings provide new insights into the genetic control of color traits in 
+\shape italic
+Andigenum
+\shape default
+ potatoes,
+ identify valuable molecular markers for selection,
+ and underscore the importance of conserving and utilizing traditional landraces for the development of nutritionally enhanced cultivars and advancement of food security.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%Anterior
+\end_layout
+
+\begin_layout Plain Layout
+
+%The Colombian Central Collection of potatoes (CCC) represents one of the most diverse germplasm collections in the country and serves as the primary source of genetic variability for potato breeding in Colombia.
+ This study uses historical color trait data to dissect the genetic architecture of coloration across different organs of the potato plant in landraces of the underexplored Andigenum group,
+ employing Genome-Wide Association Studies (GWAS) and genomic prediction.
+ GWAS analysis identified 21 significant SNPs associated with five traits:
+ ten related to the secondary color of the tuber flesh,
+ four to the primary and secondary colors of the flower,
+ three to the Primary Color of the Flower,
+ and two to the Secondary Color of the sprout.
+ Moreover,
+ 21 SNP markers were annotated with 21 genes,
+ represented by a total of 33 transcripts.
+ Half of the SNPs had support from previous color or nutritional related studies.
+ Overall,
+ color trait heritability reached its highest values for tuber flesh secondary color (0.98) and flower primary color (0.84).
+ Genomic prediction yielded predictive abilities of up to 0.84 for flower primary color and 0.71 for stem color.
+ We concluded that color in the Andigenum potato group shows strong heritability,
+ useful for future breeding studies and the promotion of some local materials for increasing food security in Colombia.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Resumen:
+
+\series default
+ La Colección Central Colombiana de papa (CCC) constituye uno de los recursos de germoplasma más diversos del país y una fuente clave de variabilidad genética para el mejoramiento.
+ Aproximadamente el 67 % de sus accesiones pertenecen al grupo 
+\shape italic
+Andigenum
+\shape default
+,
+ el cual presenta una notable diversidad de color con potencial nutracéutico asociado.
+ Sin embargo,
+ la arquitectura genética de los caracteres de color en este grupo permanece poco caracterizada.
+ En este estudio analizamos datos fenotípicos históricos para explorar la base genética de la pigmentación en accesiones 
+\shape italic
+Andigenum 
+\shape default
+de la CCC.
+ Los rasgos de color en piel y pulpa de tubérculo,
+ flores,
+ tallos y brotes fueron evaluados mediante la escala cromática de la Royal Horticultural Society,
+ y se aplicaron estudios de asociación de genoma completo (GWAS) y predicción genómica utilizando marcadores SNP de alta densidad.
+ Identificamos 21 asociaciones significativas entre SNP y rasgos,
+ de las cuales 12 coincidieron o se localizaron cerca de loci previamente reportados para pigmentación o características relacionadas con el tubérculo,
+ mientras que las restantes representan asociaciones novedosas.
+ Varios rasgos de color mostraron heredabilidades de moderadas a altas (
+\begin_inset Formula $h^{2}$
+\end_inset
+
+ 
+\begin_inset Formula $>$
+\end_inset
+
+ 0.55),
+ y la predicción genómica alcanzó capacidades predictivas de hasta 0.84 para el color primario de la flor y 0.71 para el color del tallo.
+ Estos hallazgos aportan nuevos conocimientos sobre el control genético de los caracteres de color en papas 
+\shape italic
+Andigenum
+\shape default
+,
+ identifican marcadores moleculares valiosos para la selección y resaltan la importancia de conservar y utilizar las razas locales tradicionales en el desarrollo de cultivares con mayor valor nutricional y en el fortalecimiento de iniciativas de seguridad alimentaria.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+keywords
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\shape italic
+Solanum tuberosum
+\shape default
+,
+ 
+\shape italic
+Andigenum
+\shape default
+ group,
+ potato landraces,
+ color traits,
+ GWAS,
+ Genomic Prediction
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%%
+\backslash
+pacs[JEL Classification]{D8,
+ H51}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%%
+\backslash
+pacs[MSC Classification]{35A01,
+ 65L10,
+ 65L12,
+ 65L20,
+ 65L70}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "sec1"
+
+\end_inset
+
+ Potato (
+\shape italic
+Solanum tuberosum
+\shape default
+ L.) is the most important root and tuber crop globally,
+ the third most available staple food,
+ and ranks sixth in overall crop production worldwide 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{FAO2024}
+\end_layout
+
+\end_inset
+
+.
+ It plays a vital role in food security 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{devaux2021potato}
+\end_layout
+
+\end_inset
+
+.
+ Cultivated potatoes originate from both Andean and Chilean landraces,
+ with the Andean landraces primarily belonging to the tetraploid 
+\shape italic
+Andigenum
+\shape default
+ group,
+ which is the most widely cultivated potato group.
+ This group exhibits remarkable morphological and genetic diversity 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{spooner2005single}
+\end_layout
+
+\end_inset
+
+.
+ Extensive studies across the Andean region have reported variation in color and nutritional traits,
+ including research from Peru 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{bellumori2020study}
+\end_layout
+
+\end_inset
+
+,
+ Ecuador 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{balladares2018evaluacion}
+\end_layout
+
+\end_inset
+
+,
+ Bolivia 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{larico2024descripcion}
+\end_layout
+
+\end_inset
+
+,
+ Chile 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{behn2023phenolic}
+\end_layout
+
+\end_inset
+
+,
+ and Colombia 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{Berdugo2017,berdugo2023phenotypic,garnica2012characterization}
+\end_layout
+
+\end_inset
+
+.
+ Although pigmented potatoes have been linked to potential health benefits 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{bvenura2022pigmented,lachman2005red}
+\end_layout
+
+\end_inset
+
+,
+ most commercial varieties are white-fleshed.
+ Notably,
+ the 
+\shape italic
+Andigenum
+\shape default
+ group encompasses a rich diversity of pigmented types,
+ highlighting the importance of elucidating the genetic basis of color in this group.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%PAULA:
+ genetica del color en papas andígenas leeer
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+The study of potato color has a long history,
+ with early research dating back to studies on the inheritance of flower,
+ tuber skin,
+ and flesh color 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{salaman1911inheritance,
+ lunden1932notes,
+ black1933studies,
+  dodds1955inheritance,van1994inheritance}
+\end_layout
+
+\end_inset
+
+.
+ More recent investigations have focused on identifying genes involved in tuber skin and flesh pigmentation in both diploid 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{parra2019chromosomes}
+\end_layout
+
+\end_inset
+
+ and tetraploid potatoes 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{zhang2009genetic,
+ pandey2022genomic,yusuf2024genomic}
+\end_layout
+
+\end_inset
+
+,
+ as well as exploring the associated regulatory networks 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{cho2016network,bonar2018potato}
+\end_layout
+
+\end_inset
+
+.
+ Over time,
+ advances in both color measurement technologies and genetic tools have improved the resolution and accuracy of these traits.
+ Moreover,
+ beyond its role as a morphological trait,
+ color has been associated with nutraceutical properties 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{dodds1955inheritance,parra2019chromosomes,
+ li2024transcriptomic,cho2016network}
+\end_layout
+
+\end_inset
+
+,
+ particularly because of its association with compounds such as anthocyanins and carotenoids,
+ motivating further integrative research.
+\end_layout
+
+\begin_layout Standard
+Plant color measurement techniques have evolved significantly.
+ Initially,
+ assessments were based on human perception and later transitioned to color matching using predefined charts.
+ Currently,
+ more accurate and objective methods include spectrometric and photographic color analyses 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{kasajima2019measuring}
+\end_layout
+
+\end_inset
+
+.
+ For potato plants,
+ morphological descriptors,
+ including those for color traits,
+ were developed by the International Potato Center (CIP) 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{huaman1977descriptors,gomez2000guia}
+\end_layout
+
+\end_inset
+
+.
+ These descriptors define categories for both primary and secondary colors and have been widely adopted in the characterization of potato diversity 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{behn2023phenolic,
+ Berdugo2017,
+ larico2024descripcion}
+\end_layout
+
+\end_inset
+
+.
+ Additionally,
+ the Royal Horticultural Society (RHS) introduced a color chart that expanded the number of available color categories from 10 to 884 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{RHS2015}
+\end_layout
+
+\end_inset
+
+.
+ This chart has been widely used in plant color characterization 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{tang2014effects}
+\end_layout
+
+\end_inset
+
+,
+ is easy to apply under field conditions,
+ and represents an important step toward a standardized color description.
+ Colorimeters have also been used to characterize potato color traits 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{thornton2013influence}
+\end_layout
+
+\end_inset
+
+.
+ Recently,
+ the use of photographs combined with computer vision techniques has emerged as a more precise and scalable approach 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{miller2023tubar,yusuf2024genomic,azizi2016identifying,ropelewska2021effect,feldman2024}
+\end_layout
+
+\end_inset
+
+.
+ Nevertheless,
+ to ensure consistency in color characterization,
+ it is essential to establish the relationships between different color descriptors 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{voss1992relating,ayala2006evaluation}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\color red
+Parallel to these advances in phenotyping
+\color inherit
+,
+ genetic research on potatoes has advanced considerably because of the availability of cost-effective,
+ high-throughput genotyping platforms and key genomic resources,
+ such as the 
+\shape italic
+Solanum tuberosum
+\shape default
+ reference genome 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{xu2011genome,Pham2020}
+\end_layout
+
+\end_inset
+
+.
+ The development of SNP arrays for potato 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{felcher2012integration,
+ vos2015development}
+\end_layout
+
+\end_inset
+
+ and the implementation of genotyping-by-sequencing techniques 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{sharma2024genotyping}
+\end_layout
+
+\end_inset
+
+ have made it feasible to characterize potato collections globally and apply these markers in Genome-Wide Association Studies (GWAS) and genomic prediction.
+ These tools have enabled in-depth analyses of the genetic diversity and architecture of important traits 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{sharma2024genotyping,
+ pandey2021genetic}
+\end_layout
+
+\end_inset
+
+.
+ However,
+ a significant portion of the genetic diversity of potatoes,
+ especially that of the 
+\shape italic
+Andigenum
+\shape default
+ group,
+ remains largely unexplored 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{ghislain2020genes}
+\end_layout
+
+\end_inset
+
+.
+ Expanding genomic resources for this group and studies is crucial to gain a deeper understanding of their distinct genetic characteristics.
+\end_layout
+
+\begin_layout Standard
+The Colombian Central Collection (CCC) of Potatoes,
+ managed by Corporación Colombiana de Investigación Agropecuaria (AGROSAVIA),
+ was established in 1950.
+ It consists of 2,504 accessions conserved through botanical seed,
+ 
+\shape italic
+in vitro
+\shape default
+ methods,
+ and field collections.
+ The field collection included 1,255 genetically diverse accessions,
+ primarily landraces.
+ The collection comprised 67.17% 
+\color red
+tetraploid
+\color inherit
+ 
+\shape italic
+Solanum tuberosum
+\shape default
+ group 
+\shape italic
+Andigenum
+\shape default
+,
+ 21.83% 
+\color red
+diploid
+\color inherit
+ 
+\shape italic
+Phureja
+\shape default
+,
+ and 5.9% 
+\color red
+tetraploid
+\color inherit
+ 
+\shape italic
+Chilotanum
+\shape default
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{manrique2023defining,
+ Berdugo2017}
+\end_layout
+
+\end_inset
+
+.
+ Each year,
+ clonal collection is regenerated in the field near Bogotá,
+ Colombia,
+ where the curatorial team characterizes its morphological diversity,
+ including color diversity 
+\color red
+(Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:colorpapas"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+)
+\color inherit
+.
+ To assess color-related traits,
+ such as tuber skin and flesh,
+ flower,
+ stem,
+ and berry,
+ human visual assessment has been used in combination with morphological descriptors 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{gomez2000guia}
+\end_layout
+
+\end_inset
+
+ and the RHS Color Chart 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{RHS2015}
+\end_layout
+
+\end_inset
+
+.
+ Although the descriptors of 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gomez2000guia"
+literal "false"
+
+\end_inset
+
+ have been applied in GWAS
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{Berdugo2017,
+ berdugo2023phenotypic}
+\end_layout
+
+\end_inset
+
+,
+ the color data derived from the RHS scale have not yet been integrated into genetic analyses or linked to other datasets on color,
+ nutritional,
+ and nutraceutical traits.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "berdugo2023phenotypic"
+literal "false"
+
+\end_inset
+
+ identified a strong correlation between polyphenol and ascorbic acid contents and antioxidant capacity.
+ Tubers with darker colors,
+ primarily purple in tetraploids and red in diploids,
+ showed the highest concentrations of these nutraceutical traits when pigmentation was present in both the skin and the flesh.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%This study leverages historical color trait data to dissect the genes involved in coloration across different organs of the potato plant in landraces from the underexplored Andigenum group,
+ characterized for a large variability of colors.
+ We employed GWAS and genomic prediction to identify genetic associations.
+ Specifically,
+ we asked whether the associated genes in the Andigenum group resemble those reported in previous potato studies,
+ including loci related to nutraceutical traits.
+ We found  21 SNPs associated to color traits,
+ half of the SNPs were previously reported in color or nutritional studies while the other half remains to be explored.
+ The results provide new insights into the genetic control of color traits in Andigenum potatoes,
+ identify valuable molecular markers for selection,
+ and underscore the importance of conserving like the CCC and utilizing traditional landraces for the development of nutritionally enhanced cultivars and the advancement of food security initiatives.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This study leverages historical color trait data to dissect the genetic basis of pigmentation across multiple organs of potato plants in landraces from the underexplored 
+\shape italic
+Andigenum
+\shape default
+ group,
+ which is recognized for its wide color variability.
+ The CCC,
+ composed primarily of tetraploid 
+\shape italic
+Andigenum
+\shape default
+ landraces,
+ has demonstrated high genetic diversity 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{Berdugo2017}
+\end_layout
+
+\end_inset
+
+ and represents a valuable reservoir of genes for traits such as color variation that may enhance nutritional value.
+ Using GWAS and genomic prediction,
+ we examined whether the genes identified in the 
+\shape italic
+Andigenum
+\shape default
+ group overlapped with those previously reported in potatoes,
+ including loci linked to nutraceutical traits.
+ We identified 21 SNPs associated with color traits:
+ 12 overlapped with or were located near variants reported in earlier studies of color,
+ nutritional,
+ or tuber traits,
+ while the remaining SNPs represented novel targets for exploration,
+ highlighting that the genetic architecture of color in potatoes remains incompletely understood.
+ These findings provide new insights into the pigmentation of 
+\shape italic
+Andigenum
+\shape default
+ potatoes,
+ identify molecular markers useful for selection,
+ and emphasize the importance of conserving collections such as CCC and utilizing traditional landraces to develop nutritionally enhanced cultivars that strengthen food security initiatives.
+ Understanding tuber pigmentation holds promise for improving the nutritional value of potatoes,
+ the world’s third most important staple crop.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%In recent years,
+ color characterization using photographs and computer vision has been explored in the CCC,
+ but so far has only involved 50 accessions and has focused exclusively on flower color
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%Papa - andígenas - andes - tetraploides
+\end_layout
+
+\begin_layout Plain Layout
+
+% Color  en papas - y nutrición 
+\end_layout
+
+\begin_layout Plain Layout
+
+% Color es lo que vemos y los ojos son la entrada a la boca
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% datos históricos - parte de la labor de la CCC
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/Foto Color Paper.png
+	lyxscale 50
+	width 14cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\series bold
+Color diversity among CCC potato accessions
+\series default
+ observed in (a) leaves,
+ (b) flowers,
+ (c) berries,
+ (d) tuber flesh and skin,
+ (e) stems,
+ and (f) sprouts.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:colorpapas"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Materials and Methods
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%PEndiente después incluir cita catálogo acá
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+The Colombian Central Collection of potatoes (CCC) is one of the most diverse germplasm collections in the country and serves as the primary source of genetic variability for potato breeding in Colombia 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{manrique2023defining}
+\end_layout
+
+\end_inset
+
+.
+ Currently,
+ the CCC clonal collection,
+ maintained in the field,
+ includes 1,255 accessions,
+ of which 67.17% are landraces belonging to the 
+\shape italic
+Solanum tuberosum
+\shape default
+ 
+\shape italic
+Andigenum
+\shape default
+ group.
+ Most accessions were collected before 1985.
+ The CCC is regenerated annually in the municipality of Zipaquirá,
+ located in the Department of Cundinamarca,
+ Colombia,
+ at an elevation of 2,950 m,
+ with an average temperature of 15°C and a relative humidity of 75% 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{Berdugo2017}
+\end_layout
+
+\end_inset
+
+.
+ The genotypic and phenotypic data used in this study were derived from accessions belonging to the 
+\shape italic
+Andigenum
+\shape default
+ group of CCC.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%
+\backslash
+begin{figure}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%   
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%
+\backslash
+includegraphics[width=14cm]{Figures/CCC_campo.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%  
+\backslash
+includegraphics[width=14cm]{Figures/Figura2_modificada.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% 
+\backslash
+caption{
+\backslash
+textbf{UAV imagery of the CCC field collection.} Orthomosaic of part of the field collection,
+ generated from images captured by a DJI Phantom 4 UAV at 12 m altitude in September 2022.
+ Individual plots are shown at the flowering stage,
+ with each furrow representing one accession comprising 20 plants.
+ North is oriented upward.}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% 
+\backslash
+label{cccfield}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Genotypic data
+\end_layout
+
+\begin_layout Standard
+A total of 599 tetraploid accessions from the CCC,
+ belonging to the 
+\shape italic
+S.
+ tuberosum Andigenum
+\shape default
+ group,
+ were genotyped 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{Berdugo2017}
+\end_layout
+
+\end_inset
+
+ using the Potato Illumina Infinium SolCAP SNP array version I,
+ which includes 8,303 SNPs.
+ Genotyping was performed using an Illumina HiScan SQ system (Illumina,
+ San Diego,
+ CA,
+ USA) at the AGROSAVIA.
+ Dosage genotype calls were obtained with the ClusterCall R package 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{Schmitz2017}
+\end_layout
+
+\end_inset
+
+,
+ which uses polar coordinates 
+\begin_inset Formula $(r,\theta)$
+\end_inset
+
+ from GenomeStudio,
+ applying default parameters and calibration with F1 populations.
+ This process generated a genotype call matrix (0,
+ AAAA;
+ 1,
+ AAAB;
+ 2,
+ AABB;
+ 3,
+ ABBB;
+ and 4,
+ BBBB) for each SNP in all accessions.
+\end_layout
+
+\begin_layout Standard
+Standard quality control filters were applied to ensure the reliability of the GWAS dataset.
+ SNPs with a minor allele frequency (MAF) 
+\begin_inset Formula $<1\%$
+\end_inset
+
+ were removed to eliminate rare variants with limited statistical power 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{Anderson2010}
+\end_layout
+
+\end_inset
+
+.
+ Individuals with more than 10% missing genotype calls (MIND 
+\begin_inset Formula $>$
+\end_inset
+
+0.1) were excluded to reduce bias from low-quality samples.
+ SNPs with 
+\begin_inset Formula $\geq$
+\end_inset
+
+10% missing data (GENO 
+\begin_inset Formula $\geq$
+\end_inset
+
+ 0.1) were also filtered to preserve marker integrity and minimize imputation noise.
+ In addition,
+ SNPs with Hardy–Weinberg equilibrium (HWE) p-values 
+\begin_inset Formula $<$
+\end_inset
+
+1e-10 were excluded,
+ as extreme deviations may reflect genotyping errors,
+ population structure,
+ or selection 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{Wigginton2005}
+\end_layout
+
+\end_inset
+
+.
+ These thresholds are widely used in polyploid GWAS and are aligned with established quality-control practices 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{Lu2013,
+ Pavan2020}
+\end_layout
+
+\end_inset
+
+.
+ After filtering,
+ 4,641 SNPs were retained for downstream genomic analyses (Figure S1 shows the SNP density across chromosomes).
+\end_layout
+
+\begin_layout Subsection
+Phenotypic data 
+\end_layout
+
+\begin_layout Standard
+CCC is regenerated annually in furrows of 7 m
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+ with 20 seed tubers planted per accession.
+ Furrows were spaced 1 m apart,
+ and plants within the furrows were separated by 0.35 m.
+ All accessions were maintained under standard agronomic practices,
+ including soil analysis and weekly crop monitoring.
+ This regeneration process served as the basis for the morphological color characterization of 599 accessions.
+ The evaluations included assessing the uniformity of qualitative plant descriptors and recording the characteristics of randomly selected tubers at the time of harvest.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%Carne - flesh,
+ no pulp esto tiene otro significado
+\end_layout
+
+\begin_layout Plain Layout
+
+%Brote - sprout (no bud)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+Color traits were documented for stems (seven categories),
+ berries (seven categories),
+ primary and secondary flower colors (eight and nine categories,
+ respectively),
+ tuber skin (nine and ten categories,
+ respectively),
+ tuber flesh (eight and nine categories,
+ respectively),
+ and sprouts (five and six categories,
+ respectively),
+ following the descriptors proposed by 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gomez2000guia"
+literal "false"
+
+\end_inset
+
+.
+ The 599 accessions were evaluated over 3 years (2015–2017) under similar environmental conditions because of the large size of the 
+\shape italic
+Solanum tuberosum Andigenum
+\shape default
+ collection and the limited personnel.
+ Each trait was fully evaluated within a given year,
+ although different traits were assessed in different years.
+\end_layout
+
+\begin_layout Standard
+From 2017 to 2019,
+ color characterization was further refined using the fifth edition of the Royal Horticultural Society (RHS) color chart 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{voss2002royal}
+\end_layout
+
+\end_inset
+
+ under comparable environmental conditions.
+ Each trait was evaluated within one year.
+ This update expanded the number of codes from a maximum of 10 to 884,
+ enabling a more detailed characterization of the same nine traits:
+ stem color (StemC),
+ berry color (BerryC),
+ primary flower color (PCFlower),
+ primary tuber skin color (PCTuberskin),
+ secondary tuber skin color (SCTuberskin),
+ primary tuber flesh color (PCTuberflesh),
+ secondary tuber flesh color (SCTuberflesh),
+ primary sprout color (PCSprout),
+ and secondary sprout color (SCSprout).
+\end_layout
+
+\begin_layout Standard
+Moreover,
+ color characterization using the RHS color chart was converted to the Hue,
+ Chroma,
+ and Lightness (HCL or LCH) color space,
+ a model closely aligned with human color perception and previously applied in potato color studies 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{caraza2020image}
+\end_layout
+
+\end_inset
+
+.
+ The values of these LCH traits were derived from the transformation of the values of the potato color traits,
+ measured using the Royal Horticultural Society (RHS) fifth edition color chart (http://rhscf.orgfree.com/) 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{voss2002royal}
+\end_layout
+
+\end_inset
+
+,
+ into the three components:
+ L,
+ C,
+ and H,
+ of the Commission Internationale de l'Éclairage (CIE) LCH or CIE*L*C*h color space.
+ Consequently,
+ three components were obtained for each potato color trait,
+ which are referred to as LCH traits.
+ Thus,
+ the nine potato color traits were transformed into 27 LCH traits that were used in the genomic analyses.
+\end_layout
+
+\begin_layout Subsubsection
+
+\color blue
+Outlier assessment
+\end_layout
+
+\begin_layout Standard
+
+\color blue
+Prior to downstream analyses,
+ outliers were evaluated independently for each LCH color trait component.
+ Outlier detection was performed using Tukey’s interquartile range (IQR) criterion,
+ as implemented in R,
+ where values below Q1 − 1.5×IQR or above Q3 + 1.5×IQR are classified as outliers.
+ This assessment was applied to all traits and components.
+ Although a small number of extreme values were identified by this criterion,
+ these observations corresponded to biologically plausible color phenotypes and were therefore retained for all subsequent analyses.
+\end_layout
+
+\begin_layout Subsubsection
+Correlation between two color descriptors
+\end_layout
+
+\begin_layout Standard
+The color characteristics of CCC were assessed in different years using two descriptors that contained different numbers of codes.
+ These evaluations were based on field collections conducted under comparable environmental conditions within the same municipality at an elevation of 2,950 m above sea level.
+ For each of the nine color traits,
+ the relationship between the two descriptor evaluations was determined using Cramér’s V-statistic 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{Lyman1986}
+\end_layout
+
+\end_inset
+
+.
+ Cramér’s V measures the strength of the association between two qualitative variables,
+ with values ranging from 0 to 1.
+ Values below 0.6 indicate a weak association,
+ whereas values of 0.6 or higher indicate a medium to strong association.
+ To study the genetics underlying color,
+ we selected traits with a medium-to-strong association,
+ indicating a genetic influence.
+\end_layout
+
+\begin_layout Subsubsection
+Linking Color to Nutritional and Nutraceutical Variables
+\end_layout
+
+\begin_layout Standard
+This study also examined the association between color traits and nutritional and nutraceutical values using data from a previous study,
+ in which specific methodologies for quantifying these traits have been described 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{berdugo2023phenotypic}
+\end_layout
+
+\end_inset
+
+.
+ The nutritional traits of the potatoes were represented by the Ascorbic Acid Content (AAC),
+ whereas the nutraceutical traits were the Total Phenol Content (TPC) and Antioxidant Activity (measured by 2.2-Diphenyl-1-picrylhydrazyl Radical Scavenging activity (DPPH) and Ferric Reducing Antioxidant Power (FRAP) assays.
+ Because the nutritional and nutraceutical variables were continuous and the color traits were categorical,
+ the coefficient of determination was used as a measure of association 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{nagelkerke1991note}
+\end_layout
+
+\end_inset
+
+.
+ These analyses were conducted on 282 
+\shape italic
+Andigenum
+\shape default
+ accessions from the CCC,
+ which contained data for both trait categories.
+\end_layout
+
+\begin_layout Subsection
+GWAS analysis 
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:GWAS-process"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% especificar metodologia de GWAS
+\end_layout
+
+\begin_layout Plain Layout
+
+%1-Control de Calidad de datos
+\end_layout
+
+\begin_layout Plain Layout
+
+%2-Parametros,
+ Herramientas citar
+\end_layout
+
+\begin_layout Plain Layout
+
+%3-Estructura como se definio
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%A previous GWAS study by 
+\backslash
+cite{Berdugo2017} employed the same genetic dataset and color descriptors as those defined by 
+\backslash
+cite{gomez2000guia}.
+ In contrast,
+ the present study used the RHS color chart as a phenotype for color characterization,
+ increasing the number of trait values from 30 to 884,
+ thus achieving greater resolution.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A previous GWAS by 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Berdugo2017"
+literal "false"
+
+\end_inset
+
+ analyzed the same genetic dataset using the descriptors of 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gomez2000guia"
+literal "false"
+
+\end_inset
+
+.
+ In that study,
+ color phenotypes were characterized using the RHS color chart,
+ expanding trait categories from 30 to 884,
+ thereby providing a greater resolution.
+ GWAS analyses were performed using MultiGWAS 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{Garreta2021}
+\end_layout
+
+\end_inset
+
+,
+ which integrates the results from GWASpoly v1.3 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{Rosyara2016}
+\end_layout
+
+\end_inset
+
+ for tetraploid genotypes and GAPIT v3 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{Tan2016}
+\end_layout
+
+\end_inset
+
+ for diploid genotypes.
+ All analyses were conducted under the Full Model (Q + K),
+ where the population structure (Q,
+ derived from PCA) was modeled as a fixed effect and kinship (K,
+ based on a genetic relatedness matrix) as a random effect,
+ reducing false-positive associations.
+ GWASpoly 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{Rosyara2016}
+\end_layout
+
+\end_inset
+
+ extends the mixed linear model (MLM) for polyploid data,
+ whereas GAPIT 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{Tan2016}
+\end_layout
+
+\end_inset
+
+ implements a standard MLM;
+ their integration in MultiGWAS allows for the consistent detection of marker–trait associations across ploidy levels.
+\end_layout
+
+\begin_layout Standard
+To account for multiple testing,
+ MultiGWAS applies the Bonferroni correction by adjusting the significance threshold to 
+\begin_inset Formula $\alpha/m$
+\end_inset
+
+,
+ where 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ is the significance level and 
+\begin_inset Formula $m$
+\end_inset
+
+ is the number of tested markers.
+ Significant SNP–trait associations were visualized using Manhattan and Circos plots generated using the CMPlot library 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{CMPlot}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+Candidate Marker Identification 
+\begin_inset CommandInset label
+LatexCommand label
+name "score"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To integrate the results from multiple traits and the two GWAS tools implemented in MultiGWAS,
+ we developed a proprietary scoring function called 
+\begin_inset Formula $GSCORE$
+\end_inset
+
+ to rank the markers.
+ For each tool,
+ the top 50 markers with the lowest p-values were selected,
+ yielding 100 candidate markers (two tools × fifty markers).
+ 
+\begin_inset Formula $GSCORE$
+\end_inset
+
+ is defined as the weighted sum of three components:
+ the inflation factor (
+\begin_inset Formula $I$
+\end_inset
+
+,
+ 70%),
+ replicability (
+\begin_inset Formula $R$
+\end_inset
+
+,
+ 10%),
+ and significance (
+\begin_inset Formula $S$
+\end_inset
+
+,
+ 20%),
+ as follows:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $GSCORE(M)=0.7*I+0.1*R+0.2*S$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Here,
+ 
+\begin_inset Formula $I=1-|1-\lambda(M)|$
+\end_inset
+
+,
+ where 
+\begin_inset Formula $\lambda(M)$
+\end_inset
+
+ is the inflation factor for marker 
+\begin_inset Formula $M$
+\end_inset
+
+ with values closest to one yielding the highest score.
+ 
+\begin_inset Formula $R$
+\end_inset
+
+ represents the number of SNPs replicated across the GWAS tools and 
+\begin_inset Formula $S$
+\end_inset
+
+ is a binary value (1 if the SNP is significant,
+ and 0 otherwise).
+ Markers achieve high 
+\begin_inset Formula $GSCORE$
+\end_inset
+
+ values when they exhibit appropriate inflation,
+ reproducibility across tools,
+ and statistical significance.
+ This scoring system prioritizes robust,
+ consistent,
+ and biologically meaningful markers.
+\end_layout
+
+\begin_layout Subsubsection*
+Marker annotation
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:OwnScoreFunction"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Markers were annotated using public data from the Potato Genome Sequencing Consortium (PGSC) based on the double monoploid 
+\shape italic
+S.
+ tuberosum
+\shape default
+ Group 
+\shape italic
+Phureja
+\shape default
+ assembly DMv6.1 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{Pham2020}
+\end_layout
+
+\end_inset
+
+ obtained from the SpudDB website.
+ Annotation involved linking marker identifiers to information from high-confidence gene models,
+ InterProScan-assigned GO terms,
+ InterProScan search results for working gene models,
+ and SolCAP 69 K SNP positions mapped to the DMv6.1 assembly in SpudDB.
+ In addition,
+ the amino acid sequences of genes associated with significant markers were analyzed using BlastKOALA 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{kanehisa2016blastkoala}
+\end_layout
+
+\end_inset
+
+ for KEGG mapping to identify shared functional categories.
+\end_layout
+
+\begin_layout Subsection
+Heritability Estimation
+\end_layout
+
+\begin_layout Standard
+Narrow-sense heritability (
+\begin_inset Formula $h^{2}$
+\end_inset
+
+),
+ defined as the proportion of phenotypic variance explained by additive genetic effects 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{Campos2015}
+\end_layout
+
+\end_inset
+
+,
+ was estimated for each of the 21 LCH components derived from color traits.
+ We used Bayesian Ridge Regression (BRR),
+ implemented in the 
+\family typewriter
+BGLR
+\family default
+ R package v1.1.4 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{Campos2014}
+\end_layout
+
+\end_inset
+
+,
+ because the color-related traits analyzed in this study are expected to follow a polygenic architecture,
+ with many loci of small effects contributing to the phenotype.
+\end_layout
+
+\begin_layout Standard
+BRR assumes normally distributed genetic effects across markers and estimates heritability by repeatedly sampling additive genetic variance (
+\begin_inset Formula $\sigma_{a}^{2}$
+\end_inset
+
+) and residual variance (
+\begin_inset Formula $\sigma_{e}^{2}$
+\end_inset
+
+) through a Bayesian process,
+ as follows:
+ The model was run for 15,000 iterations,
+ with a burn-in of 5,000 iterations and thinning every five steps.
+ Heritability was computed at each iteration as:
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+h^{2}=\dfrac{\sigma_{a}^{2}}{\sigma_{a}^{2}+\sigma_{e}^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This procedure yields a posterior distribution of the heritability values for each trait,
+ rather than a single-point estimate.
+ From this distribution,
+ we report the posterior mean and 95% credible interval.
+ Unlike confidence intervals from frequentist methods,
+ a Bayesian 95% credible interval indicates the range within which the true 
+\begin_inset Formula $h{^{2}}$
+\end_inset
+
+ value lies with 95% probability,
+ given the data and model.
+\end_layout
+
+\begin_layout Subsection
+Genomic Prediction (GP)
+\end_layout
+
+\begin_layout Standard
+Genomic Prediction (GP) was applied to estimate the genetic potential of individuals for each of the 21 LCH color trait components.
+ Seven statistical models were used,
+ including parametric,
+ semiparametric,
+ and Bayesian approaches.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Parametric
+\series default
+:
+ Genomic Best Linear Unbiased Prediction (GBLUP) 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Semiparametric
+\series default
+:
+ Reproducing Kernel Hilbert Spaces (RKHS) 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Bayesian
+\series default
+:
+ Bayesian Ridge Regression (BRR),
+ Bayesian LASSO (BL),
+ Bayes A,
+ Bayes B,
+ and Bayes C 
+\end_layout
+
+\begin_layout Standard
+All models were implemented using the 
+\family typewriter
+BWGS
+\family default
+ R package v0.2.1 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{Charmet2020}
+\end_layout
+
+\end_inset
+
+.
+ The predictive performance was assessed via 5-fold cross-validation,
+ repeated five times for each trait.
+ The predictive ability was measured as the Pearson correlation between the observed phenotypes and genomic estimated breeding values (GEBVs) across the validation folds.
+ All model parameters were set to the default values provided by the BWGS library.
+\end_layout
+
+\begin_layout Subsubsection
+GP using marker subsets
+\end_layout
+
+\begin_layout Standard
+To determine the optimal number of markers for the genomic prediction (GP) of each LCH color trait component,
+ GP was performed using subsets containing between 1% and 100% of the markers.
+ Markers were selected based on the GWAS results and prioritized using our custom 
+\begin_inset Formula $GSCORE$
+\end_inset
+
+ scoring function (see Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "score"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+) to assess whether the predictive ability could be improved with a reduced marker set size.
+\end_layout
+
+\begin_layout Section
+Results
+\end_layout
+
+\begin_layout Standard
+All traits displayed distinct distribution patterns across the three components,
+ with varying amounts of available data (Supplementary Figure S2).
+ Component H showed the widest distribution for eight of the nine traits,
+ whereas Components L and C exhibited similar ranges for seven of the nine traits and displayed bimodal distributions for five of them,
+ including both tuber skin color traits.
+ Berry color showed the narrowest distribution (0–120) across all three components,
+ whereas the remaining eight traits spanned a broader range (0–350).
+ As no outliers were detected,
+ all available data were retained for analysis.
+\end_layout
+
+\begin_layout Standard
+Data availability analysis revealed that seven of the nine traits had complete records for > 90% of the accessions.
+ The most limited coverage was observed for secondary color traits,
+ particularly secondary tuber flesh color (n = 94),
+ followed by secondary tuber skin color (n = 473).
+ This reflects the natural absence of secondary pigmentation in many accessions,
+ which requires full characterization.
+ Because field evaluations were conducted 2,950 m above sea level,
+ it is possible that higher-altitude trials might reveal additional cases of secondary coloration,
+ as elevated altitudes are known to enhance anthocyanin and flavonoid production 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{qi2023anthocyanin,flavonoids}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Correlation between descriptors
+\end_layout
+
+\begin_layout Standard
+The correlations between the color trait values measured using the two color descriptor systems (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Correlations-years"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+A) showed that only berry color and primary tuber flesh color had weak correlations and were therefore excluded from the genetic analysis.
+ In contrast,
+ the remaining seven color traits exhibited moderate to strong correlations,
+ with values ranging from 0.65 to 0.97.
+ While some traits were correlated with each other,
+ most moderate-to-strong correlations,
+ as expected,
+ were concentrated along the diagonal of the correlation matrix.
+ Notably,
+ strong correlations were observed between the primary and secondary tuber skin colors,
+ primary tuber skin color and both primary and secondary tuber flesh colors,
+ and primary and secondary sprout colors.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%shows the correlations between the values of the color traits measured in the first and second year,
+ where high correlations ($>$70
+\backslash
+%) are observed for the traits CPBrote,
+ CPFlor,
+ CPTuber,
+ and CSBrote;
+ good correlations ($>$50
+\backslash
+%) for CPulpa,
+ CSCarne,
+ CSTuber,
+ and CTallo;
+ and a low correlation for the trait CBaya.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement ht
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%
+\backslash
+includegraphics[width=12cm]{Figures/Correlacion_Traits.v2.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%
+\backslash
+includegraphics[width=12cm]{Figures/FigPanel_correlacion.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Figures/Fig3_v2.png
+	width 12cm
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\series bold
+Correlation and determination coefficients of RHS potato color traits in CCC accessions.
+
+\series default
+ 
+\series bold
+A.
+
+\series default
+ A heatmap showing the correlation matrix of potato color traits in CCC accessions,
+ derived from descriptors by 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gomez2000guia"
+literal "false"
+
+\end_inset
+
+ and measured with an RHS 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{voss2002royal}
+\end_layout
+
+\end_inset
+
+ color chart.
+ 
+\series bold
+B.
+
+\series default
+ Heatmap showing the determination coefficient between nutritional (AAC) and nutraceutical (TPC,
+ DPPH,
+ and FRAP assays) components and potato RHS color traits,
+ as reported previously 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{berdugo2023phenotypic}
+\end_layout
+
+\end_inset
+
+.
+ Both color bars are located in the top right of each panel,
+ with blue indicating low values and red representing high values,
+ with different scales.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Determination coefficient"
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Correlations-years"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Linking Color to Nutritional and Nutraceutical Variables
+\end_layout
+
+\begin_layout Standard
+The relationship between color traits and nutritional or nutraceutical variables in CCC was also assessed (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Determination coefficient"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ B).
+ Associations were considered weak when 
+\begin_inset Formula $R^{2}$
+\end_inset
+
+ was below 0.3 (dark blue) and moderate when between 0.35 and 0.51 (red).
+ Three specific traits,
+ the secondary color of the tuber flesh and the primary and secondary colors of the tuber skin,
+ were notably associated with nutritional variables.
+ Antioxidant activity (measured using FRAP and DPPH assays) showed the strongest correlation with these traits.
+ Additionally,
+ the total phenol and ascorbic acid contents were most strongly associated with the primary color of the tuber skin.
+ Stem color showed a moderate association with antioxidant activity and Total Phenol Content.
+\end_layout
+
+\begin_layout Subsection
+GWAS Analysis
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%
+\backslash
+subsubsection{SNPs associated with LCH traits}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+GWAS analysis identified 21 significant SNPs associated with five traits:
+ ten related to the secondary color of the tuber flesh,
+ four to the primary color of the flower,
+ three to the primary color of the sprout,
+ two to the secondary color of the sprout,
+ and two to the stem color (Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tabsnps"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ and Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:GWAS-Top-Markers-GSCORE"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+).
+ The Hue component and secondary color of the tuber flesh showed the most significant SNP associations,
+ which was also supported by previous reports 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{pandey2022genomic,riveros2022uncovering,sharma2024genotyping,parra2019chromosomes}
+\end_layout
+
+\end_inset
+
+.
+ Of the 21 SNPs identified,
+ one was previously reported to be directly associated with potato color traits,
+ whereas 11 were located within 1 Mb of loci previously reported for color,
+ nutritional,
+ or other tuber-related traits (less than LD reported based on GBS and SNP array data respectively
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{sharma2024genotyping,Berdugo2017}
+\end_layout
+
+\end_inset
+
+) (Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tabsnps"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ and Supplementary Table 1).
+ In other words,
+ 57% of the reported SNPs were consistent with the literature,
+ whereas the other half require validation.
+\end_layout
+
+\begin_layout Standard
+The 21 significantly associated SNP markers were mapped to 21 genes,
+ comprising 33 transcripts.
+ Functional pathway analysis identified eight categories based on genes containing significant SNPs:
+ seven categories belonged to metabolism and one to genetic information processing.
+ Primary annotations for these markers obtained from the SPUD database are detailed in Supplementary Table 1,
+ and trait-specific functional categories are presented in Supplementary Table 2.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%A Circos plot (Figure S3) combined the data for the five traits and presents the density of SNP markers for chromosomes,
+ allowing the visualization of SNP co-occurrence across different traits.
+\end_layout
+
+\begin_layout Plain Layout
+
+% The Manhattan plots corresponding to the five traits with significant SNPs are displayed in Figure 
+\backslash
+ref{fig:GWAS-Top-Markers-GSCORE} (A–E).
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement ht
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%
+\backslash
+includegraphics[width=14cm]{Figures/Manhattan.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Manhattan3.png
+	width 16cm
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\series bold
+Manhattan plots of markers associated with LCH traits.
+
+\series default
+ Colors indicate significant SNPs for each color component:
+ A.
+ StemC,
+ B.
+ PCFlower,
+ C.
+ SCTuberflesh,
+ D.
+ PCSprout,
+ E.
+ SCSprout.
+ Direct associations previously reported are highlighted in green,
+ while the other references correspond to genes linked to tuber traits located near the identified SNPs,
+ with lines connecting SNPs to their respective references
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:GWAS-Top-Markers-GSCORE"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{landscape}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Float table
+placement ht
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="22" columns="9">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SNP 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Trait (LCH) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tool 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Chr 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Position 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+P value 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R^{2}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gene Id DMv6.1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+References 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+rowcolor[HTML]{FFFFD7}
+\end_layout
+
+\end_inset
+
+ c2_14623 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SCTuberflesh (H) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+GWASpoly 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+67,822,946 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.07E-06 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.21 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DM.01G028040 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{sharma2024genotyping}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+cellcolor[HTML]{FFFFD7}
+\end_layout
+
+\end_inset
+
+c1_4666 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+cellcolor[HTML]{FFFFD7}
+\end_layout
+
+\end_inset
+
+SCTuberflesh (H) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+cellcolor[HTML]{FFFFD7}
+\end_layout
+
+\end_inset
+
+ GWASpoly 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+cellcolor[HTML]{FFFFD7}
+\end_layout
+
+\end_inset
+
+1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+cellcolor[HTML]{FFFFD7}
+\end_layout
+
+\end_inset
+
+75,668,861 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+cellcolor[HTML]{FFFFD7}
+\end_layout
+
+\end_inset
+
+1.55E-07 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+cellcolor[HTML]{FFFFD7}
+\end_layout
+
+\end_inset
+
+0.23 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+cellcolor[HTML]{FFFFD7}
+\end_layout
+
+\end_inset
+
+DM.01G036130 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+cellcolor[HTML]{FFFFD7}
+\end_layout
+
+\end_inset
+
+
+\series bold
+(
+\begin_inset Formula $\sim$
+\end_inset
+
+wd40)
+\series default
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{liu2020wd40,sajeevan2023comprehensive}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+rowcolor[HTML]{FFFFD7}
+\end_layout
+
+\end_inset
+
+ c1_730 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SCTuberflesh (H) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+GWASpoly 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+78,044,268 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.12E-07 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.21 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DM.01G039330 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{sharma2024genotyping}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+rowcolor[HTML]{FFFFD7}
+\end_layout
+
+\end_inset
+
+ c2_2551 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SCTuberflesh (H) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+GWASpoly 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+78,177,940 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.12E-07 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.21 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DM.01G039490 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{sharma2024genotyping}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+rowcolor[HTML]{FFFFD7}
+\end_layout
+
+\end_inset
+
+ c1_11495 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PCFlower (H,L) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+GWASpoly 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24,792,151 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.17E-06 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.03 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DM.02G009890 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{sharma2024genotyping,Berdugo2017}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+c1_11544 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SCTuberflesh (H) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+GWASpoly 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+26,621,058 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.41E-07 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.21 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DM.02G011880 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+rowcolor[HTML]{FFFFD7}
+\end_layout
+
+\end_inset
+
+ c2_27439 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+StemC (H) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+GAPIT 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+34,015,955 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.23E-05 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.03 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DM.02G019820 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+(
+\begin_inset Formula $\sim$
+\end_inset
+
+GST)
+\series default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{riveros2022uncovering}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+rowcolor[HTML]{FFFFD7}
+\end_layout
+
+\end_inset
+
+ c1_8113 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SCTuberflesh (H) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+GWASpoly 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+37,793,674 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.40E-07 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.22 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DM.02G024500 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+(
+\begin_inset Formula $\sim$
+\end_inset
+
+F3H)
+\series default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{riveros2022uncovering}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+rowcolor[HTML]{DDE8CB}
+\end_layout
+
+\end_inset
+
+ c1_7964 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PCFlower (L) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+GWASpoly 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+38,139,240 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6.31E-07 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.04 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DM.02G024900 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+(DFR)
+\series default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{riveros2022uncovering}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+rowcolor[HTML]{FFFFD7}
+\end_layout
+
+\end_inset
+
+ c1_11459 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+StemC (C ) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+GAPIT 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+45,124,985 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.11E-05 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.03 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DM.02G033700 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{sharma2024genotyping,berdugo2023phenotypic,Berdugo2017}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+c2_29450 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SCTuberflesh (H) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+GWASpoly 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5,231,620 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.51E-09 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.26 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DM.03G004830 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+rowcolor[HTML]{FFFFD7}
+\end_layout
+
+\end_inset
+
+ c1_8194 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PCFlower (L) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+GWASpoly,
+ GAPIT 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+55,211,205 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.50E-06 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.03 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DM.03G030880 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{pandey2022genomic}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+rowcolor[HTML]{FFFFD7}
+\end_layout
+
+\end_inset
+
+ c2_21934 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SCSprout(C,L) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+GAPIT 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5,765,944 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.40E-08 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.05 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DM.04G005270 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+(
+\begin_inset Formula $\sim$
+\end_inset
+
+MYB)
+\series default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{sharma2024genotyping,riveros2022uncovering}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+c2_36859 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SCTuberflesh (H) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+GAPIT 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3,398,145 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.39E-06 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.19 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+.DM.07G003030 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+c2_36872 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SCTuberflesh (H) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+GWASpoly,
+ GAPIT 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3,452,120 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5.04E-08 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.24 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DM.07G003060 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+c2_32702 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PCFlower (H) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+GWASpoly,
+ GAPIT 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,899,939 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5.66E-08 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.05 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DM.08G001440 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+c2_51974 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SCSprout (C,L) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+GAPIT 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2,472,934 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.64E-12 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.08 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DM.08G001790 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+rowcolor[HTML]{FFFFD7}
+\end_layout
+
+\end_inset
+
+ c1_11907 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SCTuberflesh (H) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+GAPIT 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+58,172,429 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.17E-06 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.19 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DM.09G022590 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{parra2021pathway}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+c1_11237 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PCSprout (L) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+GAPIT 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13,277,951 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.78E-06 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.03 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DM.11G011980 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+c1_5936 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PCSprout (L) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+GWASpoly,
+ GAPIT 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+28,989,434 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.40E-06 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.04 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DM.11G015780 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+c1_5940 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PCSprout (C,L) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+GWASpoly,
+ GAPIT 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+29,258,142 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.19E-06 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.04 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DM.11G015820 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\series bold
+Significant SNPs associated with potato color traits (LCH)
+\series default
+,
+ including trait,
+ analysis tool,
+ chromosome,
+ genomic position,
+ p-value,
+ proportion of variance explained (
+\begin_inset Formula $R^{2}$
+\end_inset
+
+),
+ corresponding gene annotations (DM v6.1),
+ and supporting references.
+ SNPs highlighted in yellow are located near previously reported genes associated with tuber traits,
+ whereas those in green represent a direct association previously reported for color.
+ 
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tabsnps"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{landscape}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Notably,
+ chromosome 2 accounted for 28.5% of the significant SNPs,
+ followed by chromosomes 1 and 11,
+ contributing 19% and 14.29%,
+ respectively,
+ respectively.
+ Two chromosomes with the highest number of significant SNPs have previously been reported to harbor loci involved in potato pigmentation,
+ with chromosomes 2 and 11 linked to the synthesis of red and blue anthocyanins 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{van1993identification,riveros2022uncovering}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%
+\backslash
+subsubsection{Previous color and nutritional studies}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+One associated SNP was located within the dihydroflavonol reductase gene DFR (DM.02G024900) at the R locus,
+ which controls the production of red anthocyanins 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{de2003allele,riveros2022uncovering}
+\end_layout
+
+\end_inset
+
+ (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:GWAS-Top-Markers-GSCORE"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+B).
+ In addition,
+ a gene on chromosome 2,
+ located near both DFR and Flavanone-3-hydroxylase (F3H;
+ DM.02G024500),
+ was associated with the secondary color of the tuber flesh and may form part of a co-regulatory region.
+ A locus on chromosome 2 near 45 Mb has also been previously associated with tuber skin brightness 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{sharma2024genotyping}
+\end_layout
+
+\end_inset
+
+,
+ secondary tuber flesh color 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{Berdugo2017}
+\end_layout
+
+\end_inset
+
+,
+ and Total Phenol content 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{berdugo2023phenotypic}
+\end_layout
+
+\end_inset
+
+.
+ Chromosome 2 harbors multiple loci linked to color traits.
+\end_layout
+
+\begin_layout Standard
+On chromosome 1,
+ we detected a locus associated with the secondary color of the tuber flesh,
+ previously reported to be involved in anthocyanin biosynthesis and pigmentation regulation via a WD40-like regulatory protein (DM.01G036130) 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{liu2020wd40,
+ sajeevan2023comprehensive}
+\end_layout
+
+\end_inset
+
+.
+ Furthermore,
+ an SNP on chromosome 3 at 
+\begin_inset space ~
+\end_inset
+
+55 Mb corresponds to a major QTL reported for purple skin and tuber flesh color 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{pandey2021genetic,
+ sharma2024genotyping}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Additional loci have been found in proximity to QTLs for other tuber-related traits,
+ such as eye depth,
+ average tuber depth,
+ tuber yield,
+ and skin brightness 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{sharma2024genotyping,pandey2022genomic}
+\end_layout
+
+\end_inset
+
+.
+ These results confirm that the genes involved in coloration in the 
+\shape italic
+Andigenum
+\shape default
+ group are consistent with those of previous potato studies,
+ including loci linked to nutraceutical traits 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{berdugo2023phenotypic,riveros2022uncovering,parra2019chromosomes,parra2021pathway}
+\end_layout
+
+\end_inset
+
+.
+ However,
+ 42.8% of the SNPs identified were not reported in earlier studies,
+ highlighting the need to further explore the 
+\shape italic
+Andigenum
+\shape default
+ group.
+\end_layout
+
+\begin_layout Standard
+Moreover,
+ GWASpoly and GAPIT identified 14 and 12 significant SNPs,
+ respectively,
+ with six SNPs jointly detected by both tools,
+ representing 28.57% of the total.
+ Although no SNPs were shared across different traits,
+ four SNPs were associated with distinct LCH components within the same trait.
+ A Circos plot (Figure S3) combined the data for the five traits and presented the density of SNP markers for chromosomes,
+ allowing the visualization of SNP co-occurrence across different traits.
+\end_layout
+
+\begin_layout Subsection
+Heritability of Color Traits
+\end_layout
+
+\begin_layout Standard
+The posterior distributions of narrow-sense heritability (
+\begin_inset Formula $h^{2}$
+\end_inset
+
+) for 21 LCH components across seven color traits in the 
+\shape italic
+Andigenum
+\shape default
+ group of 
+\shape italic
+Solanum tuberosum
+\shape default
+ are shown as boxplots,
+ which display the median,
+ interquartile range,
+ and 95% credible interval of 
+\begin_inset Formula $h^{2}$
+\end_inset
+
+ values estimated using Bayesian Ridge Regression (BRR) (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Heritabilities_and_Abilities"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ A).
+\end_layout
+
+\begin_layout Standard
+Most primary color traits,
+ particularly 
+\family typewriter
+PCFlower.H
+\family default
+,
+ 
+\family typewriter
+StemC.L
+\family default
+,
+ and 
+\family typewriter
+PCSprout.C
+\family default
+,
+ exhibited moderate to high heritability,
+ with means exceeding 0.55.
+ The highest heritability was observed for the hue component of the secondary tuber flesh color (
+\family typewriter
+SCTuberflesh.H
+\family default
+),
+ with a mean of approximately 0.98,
+ indicating strong genetic control.
+ In contrast,
+ several secondary color traits,
+ such as 
+\family typewriter
+SCSprout.C
+\family default
+,
+ 
+\family typewriter
+SCSprout.H/L
+\family default
+,
+ and 
+\family typewriter
+SCTuberskin.C
+\family default
+,
+ displayed lower heritability values (posterior means between 0.20 and 0.35),
+ suggesting a greater influence of environmental or nonadditive factors.
+\end_layout
+
+\begin_layout Standard
+Stem,
+ primary flower,
+ and primary sprout color traits showed consistent moderate to high heritability values across the HCL components,
+ supporting their utility in genomic selection and marker-assisted breeding strategies.
+\end_layout
+
+\begin_layout Subsection
+Genomic Prediction Results
+\end_layout
+
+\begin_layout Standard
+The highest predictive abilities (mean correlations 
+\begin_inset Formula $>$
+\end_inset
+
+ 0.70) were obtained for 
+\family typewriter
+PCFlower.H
+\family default
+,
+ 
+\family typewriter
+StemC.L
+\family default
+,
+ and 
+\family typewriter
+PCSprout.C
+\family default
+,
+ whereas other primary color traits,
+ such as 
+\family typewriter
+PCTuberskin.C
+\family default
+ and 
+\family typewriter
+PCSprout.L
+\family default
+,
+ showed moderate performance (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Heritabilities_and_Abilities"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ B).
+\end_layout
+
+\begin_layout Standard
+In contrast,
+ the lowest predictive abilities were observed for secondary color traits,
+ particularly 
+\family typewriter
+SCSprout.H
+\family default
+,
+ 
+\family typewriter
+SCTuberskin.C
+\family default
+,
+ and 
+\family typewriter
+SCTuberflesh.L
+\family default
+,
+ all with mean correlations below 0.40.
+ These results are consistent with the heritability patterns shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Heritabilities_and_Abilities"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+A,
+ where traits with higher heritability generally achieved greater predictive accuracies.
+ A notable exception was the secondary tuber flesh color,
+ which performed poorly because of the limited dataset (94 accessions) and the cross-validation scheme used,
+ resulting in predictive values below 0.35 across all three color components.
+ The performance also varied across models,
+ with BRR,
+ GBLUP,
+ and RKHS outperforming each other,
+ depending on the trait category (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Heritabilities_and_Abilities"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+B).
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%Heritability and Predictive Ability patterns were consistent across most traits (Figure 
+\backslash
+ref{fig:Heritabilities_and_Abilities} A and B).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+A.
+ Estimated Heritabilities 
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/FigHeritability-BRR-Boxplots.pdf
+	width 13cm
+	clip
+	special viewport=0bp 0bp 792bp 340bp
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+B.
+ Predictive Abilities 
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Fig_Predictive_ability-HCLs-Boxpplots.pdf
+	width 13cm
+	clip
+	special viewport=0bp 0bp 792bp 340bp
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\series bold
+Heritability and Predictive Ability for LCH Traits.
+
+\series default
+ Each boxplot corresponds to one of the 21 LCH color trait components in the 
+\shape italic
+Solanum tuberosum
+\shape default
+ 
+\shape italic
+Andigenum
+\shape default
+ group.
+ Traits are grouped by color feature (e.g.,
+ flower,
+ sprout,
+ skin,
+ and stem) and component (Lightness:
+ L,
+ Chroma:
+ C,
+ Hue:
+ H).
+ 
+\series bold
+A.
+ Posterior distributions of narrow-sense heritability (
+\begin_inset Formula $h^{2}$
+\end_inset
+
+)
+\series default
+ estimated using Bayesian Ridge Regression (BRR) with 15,000 iterations,
+ 5,000 burn-in iterations,
+ and thinning every five steps.
+ The posterior medians are annotated in each box.
+ 
+\series bold
+B.
+ Predictive abilities of seven genomic prediction models.
+
+\series default
+ Values represent the correlation between the observed phenotypes and GEBVs across repeated 5-fold cross-validation.
+ The mean predictive ability is shown above each boxplot,
+ and the model achieving the best performance per trait is indicated below.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Heritabilities_and_Abilities"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+GP using marker subsets
+\end_layout
+
+\begin_layout Standard
+Genomic prediction was performed using marker subsets representing 1–100% of the 4,641 SNPs.
+ The predictive ability,
+ assessed by the Pearson correlation between observed phenotypes and genomic estimated breeding values (GEBVs),
+ varied with traits and marker densities (Figure S4).
+ In general,
+ the predictive ability increased rapidly with marker density up to 40%-50% of the total set,
+ after which the gains plateaued,
+ indicating diminishing returns.
+ This pattern was observed across most color traits and LCH components (Lightness,
+ Chroma,
+ Hue),
+ suggesting that a moderate number of well-distributed,
+ informative SNPs can achieve a predictive performance comparable to that of the full marker set.
+\end_layout
+
+\begin_layout Standard
+Stem color and primary flower color consistently showed higher predictive abilities,
+ with correlations approaching 0.75 at the full marker density.
+ In contrast,
+ the secondary traits with lower data availability (Fig.
+ S2),
+ such as secondary tuber flesh (n=94),
+ secondary tuber skin color (n=473),
+ and secondary sprout color (n=542),
+ exhibited lower predictive values.
+ Secondary color results may still be influenced by the cross-validation strategy and small sample sizes,
+ even when larger marker sets are used.
+ This variability highlights differences in genetic architecture,
+ with some traits likely governed by major loci and others shaped by more polygenic and complex effects.
+\end_layout
+
+\begin_layout Standard
+These results demonstrate the feasibility of cost-effective marker-assisted breeding for several color traits in tetraploid Andigenum potatoes using an optimized SNP subset.
+ The top 50% of the markers selected with the 
+\begin_inset Formula $GSCORE$
+\end_inset
+
+ metric (Section 2.3) effectively captured the relevant genetic variation,
+ allowing accurate predictions while reducing computational requirements.
+\end_layout
+
+\begin_layout Section
+Discussion
+\end_layout
+
+\begin_layout Standard
+The 
+\shape italic
+Andigenum
+\shape default
+ group remains largely unexplored 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{ghislain2020genes}
+\end_layout
+
+\end_inset
+
+ because potato breeding has relied on only a few representatives from this upland-adapted group 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{spanoghe2022genetic}
+\end_layout
+
+\end_inset
+
+,
+ leaving much of its extensive diversity unexploited.
+ As evidence,
+ numerous potato genomes have been published in recent years 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{zhou2020haplotype,
+ campoy2020gamete,
+ sun2022chromosome,
+  bao2022genome}
+\end_layout
+
+\end_inset
+
+,
+ but only a small fraction belong to the 
+\shape italic
+Andigenum
+\shape default
+ group 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{kanehisa2016blastkoala,
+ diacolg3}
+\end_layout
+
+\end_inset
+
+,
+ even within recent pangenome initiatives 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{hoopes2022phased,guo2023pangenome,Bozan2023}
+\end_layout
+
+\end_inset
+
+ the percentage of 
+\shape italic
+Andigenum
+\shape default
+ accessions representatives is less than 4%.
+ Research on 
+\shape italic
+Andigenum
+\shape default
+ potatoes may uncover novel genes,
+ as over 80% of the genes under selection in 
+\shape italic
+Solanum tuberosum
+\shape default
+ cultivars,
+ the Chilotanum group,
+ and the 
+\shape italic
+Andigenum
+\shape default
+ group are population-specific 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{hardigan2017genome}
+\end_layout
+
+\end_inset
+
+.
+ Thus,
+ 
+\shape italic
+Andigenum
+\shape default
+ provides a broad reservoir of alleles for potato breeding.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%
+\backslash
+subsection{Characterization as an Approach to Native Potato Preservation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%PERDIDA,
+ porque esto tiene un impacto en conservación
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+Native potato varieties throughout Colombia and the broader Andean region are experiencing accelerated genetic erosion owing to displacement by commercial cultivars and the standardization of agricultural production systems 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{arcespatial,ellis2018genetic}
+\end_layout
+
+\end_inset
+
+.
+ 
+\shape italic
+Andigenum
+\shape default
+ accessions maintained in the CCC have demonstrated exceptionally high levels of genetic diversity 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{Berdugo2017}
+\end_layout
+
+\end_inset
+
+,
+ highlighting the critical importance of 
+\shape italic
+ex situ
+\shape default
+ collections in safeguarding traditional cultivars and emphasizing the value of comprehensive characterization of conserved genetic resources.
+ The identification of SNPs linked to potato color traits represents a paradigm shift from subjective morphological assessment to objective molecular characterization,
+ thereby enhancing the precision and reliability of genetic resource management.
+ This molecular approach streamlines germplasm bank operations and enables evidence-based prioritization of accessions for targeted conservation initiatives 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{ellis2018genetic}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%%% - color
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In addition,
+ investigating the genetic diversity of colors in native potatoes supports conservation efforts,
+ promotes cultural revalorization,
+ and increases consumption.
+ These cultivars offer significant nutritional value through the bioactive compounds present in both pigmented flesh and nutrient-rich skin pigments 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{bvenura2022pigmented}
+\end_layout
+
+\end_inset
+
+.
+ Pigmented potatoes are a valuable source of antioxidants with the potential to mitigate oxidative stress 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{andre2007andean}
+\end_layout
+
+\end_inset
+
+.
+ High anthocyanin concentrations found in both skin and flesh tissues confer important antioxidant and anti-inflammatory properties 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{brown2008variability}
+\end_layout
+
+\end_inset
+
+.
+ Furthermore,
+ elevated carotenoid levels provide robust protection against harmful biological processes and support the treatment of vision-related disorders 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{bvenura2022pigmented,burgos2020potato,vollmer2022world}
+\end_layout
+
+\end_inset
+
+.
+ This study confirmed the relationship between color and nutraceutical traits in CCC,
+ showing that pigmentation in the tuber flesh and skin is correlated with antioxidant activity,
+ total phenolic content,
+ and ascorbic acid levels.
+\end_layout
+
+\begin_layout Standard
+Linking genetic knowledge to potato color and nutritional properties adds new insights into how potato varieties represent not only food but also ancestral knowledge and cultural heritage 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{galvis2022cultural}
+\end_layout
+
+\end_inset
+
+.
+ Despite offering superior nutritional profiles compared to white-flesh potatoes and serving as valuable functional food sources 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{kumar2024anthocyanin}
+\end_layout
+
+\end_inset
+
+,
+ pigmented cultivars remain underutilized.
+ The perceived lower yield potential of pigmented potatoes has discouraged farmer adoption 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{witbooi2021role}
+\end_layout
+
+\end_inset
+
+,
+ whereas consumers have developed unfamiliarity with tuber pigmentation in the skin and flesh 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{paakki2016consumer}
+\end_layout
+
+\end_inset
+
+,
+ even in regions where colorful native potatoes are common.
+ The nutritional advantages of pigmented potatoes are overshadowed by consumer preferences for familiar appearances,
+ as people instinctively judge food quality based on visual characteristics 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{derndorfer2017colours}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Consumer resistance persists even when varieties offer clear benefits.
+ For example,
+ a Colombian cultivar that produces higher yields while requiring 50% fewer fungicides for 
+\shape italic
+Phytophthora infestans
+\shape default
+ control than traditional varieties still encounters market rejection.
+ Survey data from potato producers who grew this variety illustrated this contradiction.
+ While respondents recognized the cultivar's beneficial traits,
+ including superior flavor,
+ texture,
+ cooking versatility,
+ and late blight tolerance 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{sanchez2021plan}
+\end_layout
+
+\end_inset
+
+,
+ 89% of producers experienced marketing difficulties due to dark skin pigmentation,
+ as buyers expressed skepticism toward the tuber's coloration.
+ This preference for appearance over performance is further evidenced by the finding that 52% of the surveyed producers prioritized pink skin color as a cultivar characteristic,
+ valuing this aesthetic trait above flavor and nutritional attributes 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{rodriguez2023estrategia}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Promoting awareness of the connections between potato color and nutritional properties can help overcome cultural barriers and establish specialized markets that value the nutritional and cultural significance of these varieties.
+ Although some upscale Colombian restaurants have begun incorporating dark potatoes into their menus 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{RadioNacional2022}
+\end_layout
+
+\end_inset
+
+,
+ broader outreach strategies are essential.
+ Without widespread social engagement,
+ both research and breeding efforts for pigmented potato varieties face significant obstacles.
+ Native potatoes deserve recognition as living heritage,
+ embodying centuries of farmer selection and cultivation practices 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{arcespatial,luttringhaus2021dynamic}
+\end_layout
+
+\end_inset
+
+.
+ The ultimate challenge lies in transforming food consumption patterns from dependence on uniform industrial varieties to diverse diets that enhance food sovereignty and strengthen the resilience of Andean communities 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{dawson2023identifying}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%oportunidades dentro de la conservación integrada
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+Integrative approaches that connect germplasm banks (
+\shape italic
+ex situ
+\shape default
+) to local communities (
+\shape italic
+in situ
+\shape default
+) facilitate the incorporation of conservation strategies into participatory frameworks 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{luttringhaus2021dynamic}
+\end_layout
+
+\end_inset
+
+.
+ Characterization of 
+\shape italic
+ex situ
+\shape default
+ collections enables curators to disseminate genetic knowledge through participatory methodologies,
+ supporting the monitoring of field-based conservation strategies and promoting the maintenance and utilization of native potato diversity within their centers of origin 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{arcespatial,dawson2023identifying}
+\end_layout
+
+\end_inset
+
+.
+ This integrated knowledge framework enables the combination of genomic technologies with community-based conservation approaches,
+ thereby contributing to the recovery,
+ sustainable utilization,
+ and valorization of native potato genetic resources in the Andean region of Colombia.
+\end_layout
+
+\begin_layout Subsection
+Limitations and Future Directions
+\end_layout
+
+\begin_layout Standard
+
+\color blue
+Our study was conducted at a single altitude with fixed environmental conditions for each trait evaluation,
+ which limits our ability to fully disentangle genotype-by-environment (GxE) interactions.
+ However,
+ we employed multiple strategies to assess the relative contributions of genetic versus environmental factors.
+ We selected traits showing high correlation (
+\begin_inset Formula $>$
+\end_inset
+
+0.6) between independent evaluations conducted in different years,
+ reasoning that weak correlations would indicate predominant environmental effects.
+ Broad-sense heritability estimates revealed substantial variation across traits,
+ ranging from 
+\begin_inset Formula $>$
+\end_inset
+
+0.6 (indicating strong genetic control) to 
+\begin_inset Formula $<$
+\end_inset
+
+0.2 (suggesting minimal genetic influence),
+ with intermediate values (0.3-0.6) indicating both genetic and environmental contributions.
+ While our findings identify genomic regions associated with color traits under these specific conditions,
+ the genetic architecture of these traits may differ under alternative environmental conditions.
+ Evaluations across altitude gradients would be valuable for identifying additional loci and quantifying GxE effects,
+ potentially revealing environmentally-dependent genetic mechanisms not captured in the current study.
+ Such multi-environment trials would provide a more comprehensive understanding of the genetic basis of color variation in potato and its plasticity across agroecological zones.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%
+\backslash
+subsection{Validation of Candidate Genes and Breeding Prospects for Pigmented,
+ Nutrient-Enriched Potatoes}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% 2 - Algunos de esos genes se van a probar estan probando - caracterizando proyecto de investigación fundamental  (Jhon )
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Our team is currently investigating the genetic diversity of CCC,
+ with particular emphasis on native Andean genotypes that produce dark-pigmented tubers.
+ Currently,
+ we are assessing nutritional traits,
+ including zinc,
+ iron,
+ and ascorbic acid contents,
+ to elucidate their genetic bases and identify parental materials suitable for use in breeding programs aimed at developing biofortified Colombian potato varieties.
+ Within the same framework,
+ we also validated candidate genes associated with pigmentation and nutritional attributes that were identified in our previous and ongoing studies 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{berdugo2023phenotypic,
+ Berdugo2017}
+\end_layout
+
+\end_inset
+
+.
+ These genes have been validated using biotechnological approaches,
+ such as gene expression analyses and genome editing using Clustered Regularly Interspaced Short Palindromic Repeats (CRISPR) 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{Berdugo2024}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Scalable Approaches to Potato Color Characterization
+\end_layout
+
+\begin_layout Standard
+Research on color traits is increasingly shifting toward the use of photographs and image processing tools for quantitative analysis.
+ In a preliminary study of flower color in 50 accessions from CCC 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{Lopez2024}
+\end_layout
+
+\end_inset
+
+,
+ we observed that flowers often exhibited multiple colors rather than only two.
+ The phenotypic dataset generated using the RHS color chart provided here can serve as a reference for applying distance metrics,
+ such as CIEDE2000 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{tao2020smartphone}
+\end_layout
+
+\end_inset
+
+,
+ as well as computer vision algorithms.
+ These approaches offer an objective and scalable methodology for color quantification,
+ requiring only photographs with calibration patterns.
+\end_layout
+
+\begin_layout Section
+Conclusions
+\end_layout
+
+\begin_layout Standard
+This genetic study of pigmentation traits in 
+\shape italic
+Andigenum
+\shape default
+ potato landraces from the CCC uncovered 21 significant SNP-trait associations spanning multiple plant organs,
+ with 12 markers coinciding with previously characterized loci and nine representing novel associations that require experimental validation.
+ The genetic architecture showed considerable overlap with genes from the 
+\shape italic
+Chilotanum
+\shape default
+ and 
+\shape italic
+Phureja
+\shape default
+ groups,
+ confirming shared evolutionary pathways for the biosynthesis of pigments.
+ However,
+ 43% of the significant markers were previously unreported,
+ underscoring the unique genetic diversity of this underexplored germplasm.
+ Color traits displayed moderate to high heritability (
+\begin_inset Formula $h^{2}$
+\end_inset
+
+ 
+\begin_inset Formula $>$
+\end_inset
+
+ 0.55 for primary colors),
+ with genomic prediction achieving predictive abilities of up to 0.84.
+ This demonstrates that marker-assisted selection is a viable strategy for incorporating color-associated nutritional traits into breeding programs.
+\end_layout
+
+\begin_layout Standard
+Strong correlations between tuber pigmentation and antioxidant activity,
+ total phenolic content,
+ and ascorbic acid levels confirm the potential for developing nutritionally enhanced varieties through color trait selection.
+ However,
+ consumer acceptance remains a significant barrier despite their superior nutritional profiles,
+ necessitating educational initiatives and market development strategies that recognize both cultural and nutritional values.
+ These results emphasize the strategic importance of conserving and characterizing native potato genetic resources as sources of beneficial alleles to address global malnutrition challenges while preserving agricultural biodiversity and cultural heritage through 
+\shape italic
+ex situ
+\shape default
+ conservation and molecular breeding.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%This study demonstrates that the genetic architecture underlying color traits in the 
+\backslash
+textit{Andigenum} group involves genes shared with other potato groups,
+ including 
+\backslash
+textit{Chilotanum} and 
+\backslash
+textit{Phureja},
+ consistent with previous research.
+ Nevertheless,
+ approximately half of the significant markers and associated genes identified require additional functional validation.
+ The moderate to strong heritability and predictive ability observed for color traits indicate that marker-assisted selection represents a cost-effective approach for color-based breeding programs.
+ Furthermore,
+ our results confirm associations between color traits and nutraceutical properties in 
+\backslash
+textit{Andigenum} potatoes.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%These native South American landraces,
+ characterized by their remarkable pigmentation diversity,
+ possess substantial nutritional value and merit recognition as components of cultural heritage.
+ Enhancing consumer education regarding the benefits of pigmented potatoes could facilitate market expansion beyond traditional white-fleshed varieties.
+ The critical importance of 
+\backslash
+textit{ex situ} conservation repositories,
+ such as the CCC,
+ is underscored by their role in preserving landrace diversity,
+ which faces increasing threats in agricultural landscapes.
+ These findings collectively support the integration of genetic resource conservation with breeding programs to maximize the utilization of potato genetic diversity while addressing contemporary nutritional and market demands.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Data availability
+\end_layout
+
+\begin_layout Standard
+The datasets used for the genetic study are available in the Supplementary Information.
+ Genotype data are provided in File S1,
+ phenotype data for RHS color are provided in File S2,
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+textcolor{green!50!black}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+and nutraceutical variables are provided in File S3.
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Acknowledgments and Funding
+\end_layout
+
+\begin_layout Standard
+The authors thank the Corporación Colombiana de Investigación Agropecuaria (AGROSAVIA) for funding under project 1003075 (2025 BGA Documentación BG Vegetal).
+ We acknowledge financial support from the Ministry of Science,
+ Technology,
+ and Innovation of the Republic of Colombia (MinCiencias) for L.
+ Garreta's postdoctoral position at AGROSAVIA (2019–2020,
+ Grant No.
+ 811-2019,
+ supervised by ICS and PHRH) and for the contributions of ZLP and JABC (Grant No.
+ 9734-937-103718).
+ We would also like to thank the Gene Bank staff,
+ especially Baltazar Coronel for his commitment to maintaining the CCC,
+ and researcher Germán Sánchez León for his valuable contributions regarding the challenges of adopting pigmented cultivars.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%The partial contributions of ZLP and JABC,
+ in supporting and writing this publication were funded by the project 
+\backslash
+textit{“Descifrando las bases genéticas de la producción de compuestos nutricionales y la respuesta al tizón tardío en papa”} (Grant No.
+ 9734-937-103718) executed by AGROSAVIA.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "referencias"
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% common bib file
+\end_layout
+
+\begin_layout Plain Layout
+
+%% if required,
+ the content of .bbl file can be included here once bbl is generated
+\end_layout
+
+\begin_layout Plain Layout
+
+%%
+\backslash
+input sn-article.bbl
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

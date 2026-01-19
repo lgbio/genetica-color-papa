@@ -1,0 +1,66 @@
+Hola Paula,
+Ya hice el análisis de la alta heredabilidad (HR) y baja predicción (GS) para
+los fenotipos de CSPulpa o SCTuberflesh.
+- Organizé todos los inputs, por si estaba tomando diferentes para cada proceso.
+- Realizé tanto GS como HR con todos los modelos a ver si era el algoritmo.
+- Todos dieron igual. Entonces me puse a analizar los datos.
+- Este trait es el que mas tiene información faltante después de procesar el
+genotipo (imputación, MAF) y tomar los individuos comunes entre genotipo y
+fenotipo para calcular la heredabilidad.
+
+Esta es la tabla de no NAs y NAs por fenotipo:
+
+ trait     │ n_non_missing │ n_missing ║
+ =======================================
+ CTallo.L  │ 567           │ 0         ║
+ CTallo.C  │ 567           │ 0         ║
+ CTallo.H  │ 567           │ 0         ║
+ CPulpa.L  │ 567           │ 0         ║
+ CPulpa.C  │ 567           │ 0         ║
+ CPulpa.H  │ 567           │ 0         ║
+ CPFlor.L  │ 564           │ 3         ║
+ CPFlor.C  │ 564           │ 3         ║
+ CPFlor.H  │ 564           │ 3         ║
+ CPTuber.L │ 564           │ 3         ║
+ CPTuber.C │ 564           │ 3         ║
+ CPTuber.H │ 564           │ 3         ║
+ CPBrote.L │ 549           │ 18        ║
+ CPBrote.C │ 549           │ 18        ║
+ CPBrote.H │ 549           │ 18        ║
+ CBaya.L   │ 543           │ 24        ║
+ CBaya.C   │ 543           │ 24        ║
+ CBaya.H   │ 543           │ 24        ║
+ CSBrote.L │ 513           │ 54        ║
+ CSBrote.C │ 513           │ 54        ║
+ CSBrote.H │ 513           │ 54        ║
+ CSTuber.L │ 455           │ 112       ║
+ CSTuber.C │ 455           │ 112       ║
+ CSTuber.H │ 455           │ 112       ║
+ CSPulpa.L │ 91            │ 476       ║
+ CSPulpa.C │ 91            │ 476       ║
+ CSPulpa.H │ 91            │ 476       ║
+
+Le pregunté a la IA sobre esto y me respondió lo siguiente:
+
+Interpretación de la alta heredabilidad y baja habilidad predictiva genómica
+============================================================================
+Para tres componentes LCH (CSPulpa.C, CSPulpa.H y CSPulpa.L) observamos heredabilidades medias posteriores cercanas a 1, pero bajas habilidades predictivas (PA) en los análisis de validación cruzada. Esta aparente discrepancia se explica por la disponibilidad de datos y el diseño de la evaluación, más que por una contradicción entre métodos. La heredabilidad (h²)  se estimó con BGLR sobre el subconjunto de accesiones con fenotipos observados para cada carácter; cuando el número de datos faltantes es alto, estos subconjuntos tienden a ser pequeños y sesgados en su composición (por ejemplo, concentrados en ciertos ambientes/lotes o con individuos más emparentados). En tales subconjuntos, el modelo mixto puede atribuir gran parte de la variación fenotípica al componente aditivo, generando valores inflados de h². En contraste, la PA se calculó mediante validación cruzada repetida en el panel completo usando BWGS; para rasgos con muchos valores faltantes, esto produce conjuntos de entrenamiento con pocos registros efectivos y conjuntos de prueba poco relacionados o incluso provenientes de ambientes ausentes en el entrenamiento, lo que reduce la PA incluso cuando h² es alto. Otros factores que contribuyen son la heterogeneidad de la medición específica de los rasgos de color (efectos de iluminación/dispositivo/fecha) que inflan h²  si no se modelan como efectos fijos, el control genético no aditivo o dependiente del ambiente (interacciones G×E), y la imputación de fenotipos (si se realiza antes de dividir los datos), que puede atenuar las correlaciones observadas en validación cruzada. En conjunto, estos tres caracteres presentan probablemente un alto control genético dentro de los subconjuntos disponibles (alta h²), pero baja transferibilidad entre pliegues de validación, lo que se refleja en la baja PA.
+“””
+Lo mismo en inglés:
+“””
+Interpreting high heritability with low genomic predictive ability
+==================================================================
+For three LCH components (CSPulpa.C, CSPulpa.H, CSPulpa.L) we observed posterior mean heritabilities close to 1 but low genomic predictive ability (PA) in cross-validation. This apparent discrepancy is explained by data availability and evaluation design rather than a contradiction between methods. Our heritability (h²) was estimated with BGLR on the subset of accessions with observed phenotypes for each trait; when missingness is high, those subsets tend to be small and compositionally biased (e.g., concentrated in specific environments/batches or more closely related lines). In such subsets, the mixed model can attribute much of the phenotypic variation to the additive term, yielding inflated h². In contrast, genomic prediction PA was computed by repeated 5-fold CV on the full panel using BWGS defaults; for traits with many NAs this produces training sets with few effective records for the target trait and test folds that are weakly related to training and/or drawn from environments not represented in training, all of which depress PA even when h² is high. Additional contributors include measurement/processing heterogeneity specific to color traits (lighting/device/date effects) that inflate h² if unmodeled as fixed effects, non-additive or environment-dependent genetic control (unmodeled G×E), and phenotype imputation (if used before splitting), which can attenuate observed correlations in CV. Altogether, the three traits likely have high within-subset genetic signal (high h²) but limited cross-validation transferability under our evaluation scheme, hence low PA.
+
+Practical implications (concise)
+================================
+    • Report n used for h2 per trait and note missingness: high h2 on small/balanced subsets is not directly comparable to PA from CV on the full panel.
+    • Control batch/year/device effects (or pre-correct phenotypes) when estimating h2; include them as fixed effects to avoid inflating the additive variance.
+    • Align preprocessing between h2 and GP (same MAF/imputation/scaling; for RKHS ensure diag​(K)=1; for marker models use X/p
+
+One-sentence version (if you need it inline)
+============================================
+The three pulpa LCH components show high h2 estimated on small, biased non-missing subsets, but low cross-validated PA because many phenotypes are missing, environments are unevenly represented across folds, and batch/G×E effects and limited train–test relatedness reduce transferability of the genetic signal.
+“””
+
+

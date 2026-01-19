@@ -1,0 +1,8 @@
+\documentclass{article}
+\usepackage{pdfpages}
+%\VignetteIndexEntry{LuisGarreta2021ppGS}
+%\VignetteKeywords{Genomic Selection, R}
+%\VignettePackage{ppGS}
+\begin{document}
+\includepdf[pages=-, fitpaper=true]{introduction_ppGS.pdf}
+\end{document}

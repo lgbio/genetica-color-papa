@@ -1,0 +1,9 @@
+trainingGenoFile  : single-training-geno.csv
+trainingPhenoFile : single-training-pheno.csv
+targetGenoFile    : single-target-geno.csv
+targetPhenoFile   : single-target-pheno.csv
+phenoName         : Tallo.LCH.H
+methods           : BA BB BC #BL BRR GBLUP EGBLUP RKHS
+nTimes            : 1
+nFolds            : 2
+nCores            : 4

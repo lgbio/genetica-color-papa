@@ -1,4 +1,16 @@
-#!/usr/bin/Rscript
+#!/usr/bin/env Rscript
+
+# --- tell renv the project BEFORE it loads ---
+Sys.setenv(RENV_PROJECT = "/home/lg/BIO/agrosavia/genetica-color-papa")
+
+if (!requireNamespace("renv", quietly = TRUE)) stop("renv not available")
+#renv::activate(project = "/home/lg/BIO/agrosavia/genetica-color-papa")
+renv::load ()
+
+cat("R version:", R.version.string, "\n")
+cat("Library paths:\n")
+print(.libPaths())
+
 source ("lglib14.R")
 
 library (reshape2) # melt
@@ -8,7 +20,8 @@ library (ggplot2)
 # Outliers removed according to Interquartile Range (IQR) method
 # Plot densities and outliers after removing outliers
 
-INPUTFILE = "inputs/out-fenotiposColor-ComponentesLCH.csv"
+#INPUTFILE = "inputs/out-fenotiposColor-ComponentesLCH.csv"
+INPUTFILE = "inputs/fenotiposColor-ComponentesLCH.csv"
 createDir ("outputs")
 
 #----------------------------------------------------------
@@ -47,6 +60,7 @@ removeOutliers <- function (phenosFile) {
 		values = phenos [,trait]
 		positions = rmOutliers (values)
 		if (length (positions) > 0)
+			message ("Outliers detected: in trait: ", trait, ", length: ", length(positions))
 			phenos [positions,trait] = NA
 	}
 	

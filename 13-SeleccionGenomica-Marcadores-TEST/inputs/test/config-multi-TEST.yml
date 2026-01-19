@@ -1,0 +1,11 @@
+trainingGenoFile  : ./data-ADDITIVE/training-geno.csv  # Obligatory file
+trainingPhenoFile : ./data-ADDITIVE/training-pheno.csv # Obligatory file
+targetGenoFile    : ./data-ADDITIVE/target-geno.csv    # Obligatory file
+targetPhenoFile   : ./data-ADDITIVE/target-pheno.csv   # Optional file 
+markersFile       : NULL                  # Optional file with markers (SNP column) to select for using in GS
+nMarkers : 50    # Number of markers to select from markers file
+  #methods  : BA BB # Models to test, the complete models are : BA BB BC BL BRR GBLUP EGBLUP RKHS
+methods  : BA BB 
+nTimes   : 1     # Number of times for cross validation, use 5 or more for better results (take long time)
+nFolds   : 2     # Number of folds for cross validation, use 5 or more for better results (take long time)
+nCores   : 3     # Number of processing cores for GS, it dependes of the machine where it is running

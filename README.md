@@ -1,6 +1,8 @@
 # Pasos y scripts del trabajo con AGROSAVIA de genética del color en papa.
 
 ## LOG
+jan/18: r0.35 : Done paper revision about outliers.
+
 Jun/22: r0.34 : Improved Heritability and Genomic Selection Full. Plots Spanish.
 
 May/29: r0.33 : Working on heritabiliy

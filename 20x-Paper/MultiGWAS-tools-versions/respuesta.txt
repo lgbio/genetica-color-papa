@@ -1,0 +1,3 @@
+Hola, estas son las versiones:
+GAPIT.Version is 2018.08.18, GAPIT 3.0" pero el modelo usado fue un"MLM" y no un MLMM
+

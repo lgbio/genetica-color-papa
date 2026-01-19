@@ -1,0 +1,606 @@
+%Version 3 December 2023
+% See section 11 of the User Manual for version history
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                 %%
+%% Please do not use \input{...} to include other tex files.       %%
+%% Submit your LaTeX manuscript as one .tex document.              %%
+%%                                                                 %%
+%% All additional figures and files should be attached             %%
+%% separately and not embedded in the \TeX\ document itself.       %%
+%%                                                                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%\documentclass[referee,sn-basic]{sn-jnl}% referee option is meant for double line spacing
+
+%%=======================================================%%
+%% to print line numbers in the margin use lineno option %%
+%%=======================================================%%
+
+%%\documentclass[lineno,sn-basic]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
+
+%%======================================================%%
+%% to compile with pdflatex/xelatex use pdflatex option %%
+%%======================================================%%
+
+%%\documentclass[pdflatex,sn-basic]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
+
+
+%%Note: the following reference styles support Namedate and Numbered referencing. By default, the style follows the most common style. To switch between the options you can add or remove Numbered in the optional parenthesis. 
+%%The option is available for: sn-basic.bst, sn-vancouver.bst, sn-chicago.bst%  
+ 
+%%\documentclass[pdflatex,sn-nature]{sn-jnl}% Style for submissions to Nature Portfolio journals
+%%\documentclass[pdflatex,sn-basic]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
+%\documentclass[pdflatex,sn-mathphys-num]{sn-jnl}% Math and Physical Sciences Numbered Reference Style 
+\documentclass[pdflatex,sn-mathphys-ay]{sn-jnl}% Math and Physical Sciences Author Year Reference Style
+%%\documentclass[pdflatex,sn-aps]{sn-jnl}% American Physical Society (APS) Reference Style
+%%\documentclass[pdflatex,sn-vancouver,Numbered]{sn-jnl}% Vancouver Reference Style
+%%\documentclass[pdflatex,sn-apa]{sn-jnl}% APA Reference Style 
+%%\documentclass[pdflatex,sn-chicago]{sn-jnl}% Chicago-based Humanities Reference Style
+
+%%%% Standard Packages
+%%<additional latex packages if required can be included here>
+\usepackage[english]{babel}
+\usepackage{graphicx}%
+\usepackage{multirow}%
+\usepackage{amsmath,amssymb,amsfonts}%
+\usepackage{amsthm}%
+\usepackage{mathrsfs}%
+\usepackage[title]{appendix}%
+\usepackage{xcolor}%
+\usepackage{textcomp}%
+\usepackage{manyfoot}%
+\usepackage{booktabs}%
+\usepackage{algorithm}%
+\usepackage{algorithmicx}%
+\usepackage{algpseudocode}%
+\usepackage{listings}%
+\usepackage[dvipsnames]{xcolor} % Temporal: Cambiar color texto parrafos
+\usepackage{ulem}  % Temporal: Para subrayar texto parrafos
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{float} 
+\usepackage{pdflscape} 
+ %%%%
+
+%%%%%=============================================================================%%%%
+%%%%  Remarks: This template is provided to aid authors with the preparation
+%%%%  of original research articles intended for submission to journals published 
+%%%%  by Springer Nature. The guidance has been prepared in partnership with 
+%%%%  production teams to conform to Springer Nature technical requirements. 
+%%%%  Editorial and presentation requirements differ among journal portfolios and 
+%%%%  research disciplines. You may find sections in this template are irrelevant 
+%%%%  to your work and are empowered to omit any such section if allowed by the 
+%%%%  journal you intend to submit to. The submission guidelines and policies 
+%%%%  of the journal take precedence. A detailed User Manual is available in the 
+%%%%  template package for technical guidance.
+%%%%%=============================================================================%%%%
+
+%% as per the requirement new theorem styles can be included as shown below
+%\theoremstyle{thmstyleone}%
+\newtheorem{theorem}{Theorem}%  meant for continuous numbers
+%%\newtheorem{theorem}{Theorem}[section]% meant for sectionwise numbers
+%% optional argument [theorem] produces theorem numbering sequence instead of independent numbers for Proposition
+\newtheorem{proposition}[theorem]{Proposition}% 
+%%\newtheorem{proposition}{Proposition}% to get separate numbers for theorem and proposition etc.
+
+%\theoremstyle{thmstyletwo}%
+\newtheorem{example}{Example}%
+\newtheorem{remark}{Remark}%
+
+%\theoremstyle{thmstylethree}%
+\newtheorem{definition}{Definition}%
+
+\usepackage{charter}
+
+\raggedbottom
+%%\unnumbered% uncomment this for unnumbered level heads
+
+\begin{document}
+
+
+\title[Color Trait Diversity in Andigenum Potatoes from the Colombian Central Collection: Evidence of High genomic Heritability and Predictive Ability]{Harnessing the Genetic Diversity of the Colombian Central Collection to Dissect Pigmentation Genetics in \textit{Andigenum} Landraces}
+
+%Otra opción
+%Dissecting Pigmentation in Colombian Potato Landraces: GWAS and Genomic Prediction in the Andigenum Group
+
+
+
+
+%Color Trait Diversity in Andigenum Potatoes from the Colombian Central Collection: Evidence of High genomic Heritability and Predictive Ability
+%%=============================================================%%
+%% GivenName	-> \fnm{Joergen W.}
+%% Particle	-> \spfx{van der} -> surname prefix
+%% FamilyName	-> \sur{Ploeg}
+%% Suffix	-> \sfx{IV}
+%% \author*[1,2]{\fnm{Joergen W.} \spfx{van der} \sur{Ploeg} 
+%%  \sfx{IV}}\email{iauthor@gmail.com}
+%%=============================================================%%
+
+\author[1,3]{\fnm{Luis} \sur{Garreta}}
+
+\author[2]{\fnm{Zahara L.} \sur{Lasso-Paredes}}
+
+\author[1]{\fnm{Jhon A.} \sur{Berdugo-Cely}}
+
+\author[1]{\fnm{Ivania} \sur{Cerón-Souza}}
+
+\author*[1]{\fnm{Paula H.} \sur{Reyes-Herrera}}\email{phreyes@agrosavia.co}
+
+\affil[1]{\orgdiv{CI Tibaitatá}, \orgname{Corporación Colombiana de Investigación Agropecuaria (AGROSAVIA)}, \orgaddress{\street{Km 14 via Mosquera}, \city{Bogotá}, \postcode{250047}, \state{Cundinamarca}, \country{Colombia}}}
+
+\affil[2]{\orgdiv{CI Sede Central}, \orgname{Corporación Colombiana de Investigación Agropecuaria (AGROSAVIA)}, \orgaddress{\street{Km 14 via Mosquera}, \city{Bogotá}, \postcode{250047}, \state{Cundinamarca}, \country{Colombia}}}
+
+\affil[3]{\orgdiv{Current address: Grupo de Investigación Bioinformática y Biocomputación
+}, \orgname{Universidad del Valle}, \city{Cali}, \postcode{760042}, \state{Valle del Cauca}, \country{Colombia}}
+
+
+
+
+
+%%==================================%%
+%% Sample for unstructured abstract %%
+%%==================================%%
+
+\abstract{The Colombian Central Collection of potatoes (CCC) is one of the most diverse germplasm resources in the country and a primary source of genetic variability for breeding. Most accessions belong to the Andigenum group, which exhibits remarkable pigmentation diversity with associated nutraceutical potential. However, the genetic architecture of color traits in this group remains poorly characterized. In this study, we analyzed historical phenotypic data to investigate the genetic basis of coloration in Andigenum accessions from the CCC. Color traits across tuber skin, tuber flesh, flowers, stems, and sprouts were assessed using the Royal Horticultural Society Color Chart. Genome-Wide Association Studies and genomic prediction were conducted using high-density SNP markers. We identified 21 significant SNP–trait associations, with 12 overlapping or located near loci previously reported for pigmentation or tuber-related traits, while the remainder represent novel associations. Most primary color traits showed moderate to high heritability ($h^2$ $>$ 0.55), and genomic prediction achieved predictive abilities of up to 0.84 for flower primary color and 0.71 for stem color. These findings provide new insights into the genetic control of color traits in Andigenum potatoes, identify valuable molecular markers for selection, and underscore the importance of conserving and utilizing traditional landraces for the development of nutritionally enhanced cultivars and the advancement of food security initiatives.
+
+%Anterior
+%The Colombian Central Collection of potatoes (CCC) represents one of the most diverse germplasm collections in the country and serves as the primary source of genetic variability for potato breeding in Colombia. This study uses historical color trait data to dissect the genetic architecture of coloration across different organs of the potato plant in landraces of the underexplored Andigenum group, employing Genome-Wide Association Studies (GWAS) and genomic prediction. GWAS analysis identified 21 significant SNPs associated with five traits: ten related to the secondary color of the tuber flesh, four to the primary and secondary colors of the flower, three to the Primary Color of the Flower, and two to the Secondary Color of the sprout. Moreover, 21 SNP markers were annotated with 21 genes, represented by a total of 33 transcripts. Half of the SNPs had support from previous color or nutritional related studies. Overall, color trait heritability reached its highest values for tuber flesh secondary color (0.98) and flower primary color (0.84). Genomic prediction yielded predictive abilities of up to 0.84 for flower primary color and 0.71 for stem color. We concluded that color in the Andigenum potato group shows strong heritability, useful for future breeding studies and the promotion of some local materials for increasing food security in Colombia.
+
+
+\textbf{Resumen:}
+La Colección Central Colombiana de papa (CCC) es uno de los recursos de germoplasma más diversos del país y constituye una fuente primaria de variabilidad genética para el mejoramiento. La mayoría de las accesiones pertenecen al grupo Andigenum, el cual exhibe una notable diversidad de pigmentación con potencial nutracéutico asociado. Sin embargo, la arquitectura genética de los rasgos de color en este grupo sigue siendo poco caracterizada. En este estudio analizamos datos fenotípicos históricos para investigar la base genética de la coloración en accesiones de razas locales Andigenum de la CCC. Los rasgos de color en piel y pulpa de tubérculo, flores, tallos y brotes fueron evaluados utilizando la Royal Horticultural Society Color Chart. Se llevaron a cabo estudios de asociación de genoma completo (GWAS) y predicción genómica empleando marcadores SNP de alta densidad. Identificamos 21 asociaciones significativas entre SNP y rasgos, de las cuales 12 coincidieron o se ubicaron cerca de loci previamente reportados para pigmentación o características relacionadas con el tubérculo, mientras que la otra mitad representó asociaciones novedosas. La mayoría de los rasgos de color primarios mostraron una heredabilidad moderada a alta ($h^2$ $>$ 0,55), y la predicción genómica alcanzó habilidades predictivas de hasta 0,84 para el color primario de la flor y 0,71 para el color del tallo. Estos hallazgos aportan nuevos conocimientos sobre el control genético de los rasgos de color en papas Andigenum, identifican marcadores moleculares valiosos para la selección y destacan la importancia de conservar y utilizar los cultivares tradicionales en el desarrollo de variedades con propiedades nutricionales mejoradas y en el fortalecimiento de las iniciativas de seguridad alimentaria.}
+
+
+%\textbf{Resumen:} XXX}
+
+
+%%================================%%
+%% Sample for structured abstract %%
+%%================================%%
+
+% \abstract{\textbf{Purpose:} The abstract serves both as a general introduction to the topic and as a brief, non-technical summary of the main results and their implications. The abstract must not include subheadings (unless expressly permitted in the journal's Instructions to Authors), equations or citations. As a guide the abstract should not exceed 200 words. Most journals do not set a hard limit however authors are advised to check the author instructions for the journal they are submitting to.
+% 
+% \textbf{Methods:} The abstract serves both as a general introduction to the topic and as a brief, non-technical summary of the main results and their implications. The abstract must not include subheadings (unless expressly permitted in the journal's Instructions to Authors), equations or citations. As a guide the abstract should not exceed 200 words. Most journals do not set a hard limit however authors are advised to check the author instructions for the journal they are submitting to.
+% 
+% \textbf{Results:} The abstract serves both as a general introduction to the topic and as a brief, non-technical summary of the main results and their implications. The abstract must not include subheadings (unless expressly permitted in the journal's Instructions to Authors), equations or citations. As a guide the abstract should not exceed 200 words. Most journals do not set a hard limit however authors are advised to check the author instructions for the journal they are submitting to.
+% 
+% \textbf{Conclusion:} The abstract serves both as a general introduction to the topic and as a brief, non-technical summary of the main results and their implications. The abstract must not include subheadings (unless expressly permitted in the journal's Instructions to Authors), equations or citations. As a guide the abstract should not exceed 200 words. Most journals do not set a hard limit however authors are advised to check the author instructions for the journal they are submitting to.}
+
+\keywords{Andigenum group, potato landraces, color traits, GWAS, Genomic Prediction}
+
+%%\pacs[JEL Classification]{D8, H51}
+
+%%\pacs[MSC Classification]{35A01, 65L10, 65L12, 65L20, 65L70}
+
+\maketitle
+
+\section{Introduction}\label{sec1}
+Potato (\textit{Solanum tuberosum} L.) is the most important root and tuber crop globally, the third most available staple food, and ranks sixth in overall crop production worldwide \citep{FAO2024}. It plays a vital role in food security \citep{devaux2021potato}.Cultivated potatoes originate from both Andean and Chilean landraces, with Andean landraces—primarily belonging to the Andigenum group—being the most widely cultivated. This group exhibits remarkable morphological and genetic diversity \citep{spooner2005single}. Extensive studies across the Andean region have reported variation in color and nutritional traits, including research from Peru \citep{bellumori2020study}, Ecuador \citep{balladares2018evaluacion}, Bolivia \citep{larico2024descripcion}, Chile \citep{behn2023phenolic}, and Colombia \citep{Berdugo2017,berdugo2023phenotypic,garnica2012characterization}. Although pigmented potatoes have been linked to potential health benefits \citep{bvenura2022pigmented,lachman2005red}, most commercial varieties are white-fleshed. Notably, the Andigenum group encompasses a rich diversity of pigmented types, highlighting the importance of elucidating the genetic basis of color in this group.
+
+
+
+
+%PAULA: genetica del color en papas andígenas leeer
+The study of potato color has a long history, with early research dating back to studies on the inheritance of flower and tuber skin and flesh color \citep{salaman1911inheritance, lunden1932notes, black1933studies,  dodds1955inheritance,van1994inheritance}. More recent investigations have focused on identifying genes involved in tuber skin and flesh pigmentation, in both diploid \citep{parra2019chromosomes} and tetraploid potatoes \citep{zhang2009genetic, pandey2022genomic,yusuf2024genomic}, as well as exploring the associated regulatory networks \citep{cho2016network,bonar2018potato}. Over time, advances in both color measurement technologies and genetic tools have improved the resolution and accuracy with which these traits can be studied. Moreover, beyond its role as a morphological trait, color has been associated with nutraceutical properties \citep{dodds1955inheritance,parra2019chromosomes, li2024transcriptomic,cho2016network}, particularly due to its link with compounds such as anthocyanins, thereby motivating further integrative research.  
+
+
+
+
+Plant color measurement techniques have evolved significantly over time. Initially, assessments were based on human perception, later transitioning to color matching using predefined charts. Currently, more accurate and objective methods include spectrometric and photographic color analysis \citep{kasajima2019measuring}. In the case of potato, morphological descriptors—including those for color traits—were developed by the International Potato Center (CIP) \citep{huaman1977descriptors,gomez2000guia}. These descriptors define categories for both primary and secondary colors and have been widely adopted in the characterization of potato diversity \citep{behn2023phenolic,Berdugo2017,larico2024descripcion}. Additionally, the Royal Horticultural Society (RHS) introduced a color chart that expanded the number of available color categories from 10 to 884 \citep{RHS2015}. This chart has been widely used in plant color characterization \citep{tang2014effects}, is easy to apply under field conditions, and represents an important step toward standardized color description. Colorimeters have also been used to characterize potato color traits \citep{thornton2013influence}, and more recently, the use of photographs combined with computer vision techniques has emerged as a more precise and scalable approach \citep{miller2023tubar,yusuf2024genomic,azizi2016identifying,ropelewska2021effect,feldman2024}. Nevertheless, to ensure consistency in color characterization, it is essential to establish relationships between different color descriptors \citep{voss1992relating,ayala2006evaluation}. 
+
+On the other hand, genetic research in potato has advanced considerably due to the availability of cost-effective, high-throughput genotyping platforms and key genomic resources such as the \textit{Solanum tuberosum} reference genome \citep{xu2011genome,Pham2020}. The development of SNP arrays for potato \citep{felcher2012integration, vos2015development}, along with the implementation of genotyping-by-sequencing techniques \citep{sharma2024genotyping}, has made it feasible to characterize potato collections globally and apply these markers in Genome-Wide Association Studies (GWAS) and genomic prediction. These tools have enabled in-depth analyses of genetic diversity and the architecture of important traits \citep{sharma2024genotyping, pandey2021genetic}. However, a significant portion of potato’s genetic diversity—especially that of the Andigenum group—remains largely unexplored \citep{ghislain2020genes}. Expanding genomic resources for this group and studies is crucial to gain a deeper understanding of its distinct genetic characteristics.
+
+The Colombian Central Collection (CCC) of Potatoes, managed by Corporación Colombiana de Investigación Agropecuaria (AGROSAVIA), was established in 1950. It consists of 2,504 accessions conserved through botanical seed, \textit{in vitro} methods, and field collections. The field collection includes 1,255 genetically diverse accessions, primarily landraces from the \textit{Solanum tuberosum} group Andigenum 67.17\%, followed by the Phureja 21.83\% and tuberosum 5.9\% \citep{manrique2023defining, Berdugo2017}. Each year, the clonal collection is regenerated in the field near Bogotá, Colombia, where the curatorial team also characterizes its morphological diversity, including color diversity. To assess color-related traits, such as tuber skin and flesh, flower, stem, and berry, human visual assessment has been used in combination with morphological descriptors \citep{gomez2000guia} and the RHS Color Chart \citep{RHS2015}.  Although the descriptors of \cite{gomez2000guia} have been applied in GWAS\citep{Berdugo2017, berdugo2023phenotypic}, the color data derived from the RHS scale has not yet been integrated into genetic analyzes or linked to other datasets on color or nutritional and nutraceutical traits. \cite{berdugo2023phenotypic} identified a strong correlation between polyphenol and ascorbic acid contents and antioxidant capacity. Tubers with darker colors—primarily purple in tetraploids and red in diploids—showed the highest concentrations of these nutraceutical traits when pigmentation was present in both skin and flesh.
+
+%This study leverages historical color trait data to dissect the genes involved in coloration across different organs of the potato plant in landraces from the underexplored Andigenum group, characterized for a large variability of colors. We employed GWAS and genomic prediction to unveil the genetic associations. Specifically, we ask whether the associated genes in the Andigenum group resemble those reported in previous potato studies, including loci related to nutraceutical traits. We found  21 SNPs associated to color traits, half of the SNPs were previously reported in color or nutritional studies while the other half remains to be explored. The results provide new insights into the genetic control of color traits in Andigenum potatoes, identify valuable molecular markers for selection, and underscore the importance of conserving like the CCC and utilizing traditional landraces for the development of nutritionally enhanced cultivars and the advancement of food security initiatives.
+
+This study draws on historical color trait data to explore the genetic basis of coloration across multiple organs of the potato plant in landraces from the underexplored Andigenum group, recognized for its wide color variability. The CCC, composed primarily of tetraploid Andigenum landraces, has demonstrated high genetic diversity \citep{Berdugo2017} and represents a valuable reservoir of genes for traits such as color variation that may enhance nutritional value. Using GWAS and genomic prediction, we examined whether the genes identified in the Andigenum group overlap with those previously reported in potatoes, including loci linked to nutraceutical traits. We identified 21 SNPs associated with color traits: 12 overlapped with or were located near variants reported in earlier studies of color, nutritional, or tuber traits, while the remaining represent novel targets for exploration—highlighting that the genetic architecture of color in potatoes remains incompletely understood. These findings provide new insights into the regulation of color traits in Andigenum potatoes, identify molecular markers useful for selection, and emphasize the importance of conserving collections such as the CCC and utilizing traditional landraces to develop nutritionally enhanced cultivars and strengthen food security initiatives. Understanding tuber pigmentation further holds promise for improving the nutritional value of potato, the world’s third most important staple crop.
+
+
+
+%In recent years, color characterization using photographs and computer vision has been explored in the CCC, but so far has only involved 50 accessions and has focused exclusively on flower color
+
+%Papa - andígenas - andes - tetraploides
+% Color  en papas - y nutrición 
+% Color es lo que vemos y los ojos son la entrada a la boca
+
+% datos históricos - parte de la labor de la CCC
+
+\begin{figure}
+    \centering
+    
+    \includegraphics[width=14cm]{Figures/Foto Color Paper.png}
+
+   \caption{\textbf{Color diversity among CCC potato accessions} observed in (a) leaves, (b) flowers,  (c) berries, (d) tuber flesh and skin, (e) stems, and (f) sprouts.}
+    \label{fig:colorpapas}
+\end{figure}
+
+
+\section{Materials and Methods}
+The Colombian Central Collection of potatoes (CCC) represents one of the most diverse germplasm collections in the country and serves as the primary source of genetic variability for potato breeding in Colombia \citep{manrique2023defining}. Currently, the CCC's clonal collection, maintained in the field, includes 1,255 accessions, of which 67.17\% are landraces belonging to the \textit{Solanum tuberosum} Andigenum group. Most of these accessions were collected prior to 1985. The CCC is regenerated annually in the municipality of Zipaquirá (see Figure \ref{cccfield}), located in the department of Cundinamarca, Colombia, at an elevation of 2,950 meters, with an average temperature of 15°C and a relative humidity of 75\% \citep{Berdugo2017}. The genotypic and phenotypic data used in this study are derived from accessions belonging to the Andigenum group within the CCC.
+
+\begin{figure}
+    \centering
+    %\includegraphics[width=14cm]{Figures/CCC_campo.png}
+    \includegraphics[width=14cm]{Figures/UAV.png}
+    \caption{\textbf{UAV imagery of the CCC conserved in the field.} (a) Orthomosaic overview of the entire collection, generated from images captured by a P4 UAV at 12 m altitude in September 2022. (b) High-resolution view of individual plots at the flowering stage, where each furrow corresponds to one accession comprising 20 plants. North is oriented upward in both panels.}
+    \label{cccfield}
+\end{figure}
+
+
+
+
+
+\subsection{Genotypic data}
+
+A set of 599 tetraploid accessions from the CCC, belonging to the S. tuberosum Andigenum group, was previously genotyped \citep{Berdugo2017} using the Potato Illumina Infinium SolCAP SNP array version I, which contains 8,303 SNPs. The array was processed on the Illumina HiScan SQ system (Illumina, San Diego, CA) at AGROSAVIA, and the ClusterCall R package \citep{Schmitz2017} was used to obtain the dosage genotype calls from polar coordinates $(r,\theta)$ obtained from GenomeStudio, applying default parameters, and calibration from F1 populations supported by the software. This resulted in a genotype call matrix (0: AAAA, 1: AAAB, 2: AABB, 3: ABBB, and 4: BBBB) for each SNP across all accessions.
+
+%---------------Modificado por Luis Garreta
+
+Standard filtering criteria were applied to ensure data quality and reliability for subsequent GWAS analyses. SNPs with a minor allele frequency (MAF) below 1\% were excluded to eliminate rare variants that may lead to spurious associations due to insufficient statistical power \citep{Anderson2010}. Individuals with a genotype call missing rate (MIND) greater than 10\% were removed to avoid bias introduced by low-quality samples. SNPs with a missing rate (GENO) of $\geq 10\%$ were filtered to maintain marker integrity and reduce imputation noise. Additionally, SNPs with Hardy-Weinberg equilibrium (HWE) p-values below 1e-10 were excluded because extreme deviations may indicate genotyping errors, population structure artifacts, or selection \citep{Wigginton2005}.  These thresholds are commonly used in polyploid GWAS studies and are consistent with established quality control practices \citep{Lu2013,Pavan2020}. After filtering, 4,641 SNPs were retained for downstream genomic analyses (Figure S1 shows the distribution of SNP density across the chromosomes used in the study, and File S1 provides the SNP marker matrix for the accessions analyzed).
+
+
+
+\subsection{Phenotypic data }
+
+
+
+
+The CCC is regenerated annually in furrows measuring 7 square meters, with 20 seed tubers planted per accession. Furrows are spaced 1 meter apart, and individual plants are separated by 0.35 meters (Figure \ref{cccfield}). All accessions are managed under standardized agronomic practices based on soil analysis and weekly crop monitoring. This regeneration process served as the basis for the morphological color characterization of 599 accessions. The evaluation involved assessing the uniformity of qualitative plant descriptors and examining the characteristics of randomly selected tubers at harvest within each furrow. Given the extensive size of the \textit{Solanum tuberosum} Andigenum group collection and limited human resources, the 600 accessions were evaluated over a three-year period (2015–2017). Color traits were recorded for the stem (7 categories), berry (7 categories), primary and secondary flower colors (8 and 9 categories, respectively), tuber skin (9 and 10 categories, respectively), tuber flesh (8 and 9 categories, respectively), and sprouts (5 and 6 categories, respectively), using the descriptors proposed by \cite{gomez2000guia}. 
+
+%Carne - flesh, no pulp esto tiene otro significado
+%Brote - sprout (no bud)
+Additionally, in 2019, color characterization was performed using the fifth edition of the Royal Horticultural Society (RHS) color chart \citep{voss2002royal} to provide a more detailed color evaluation. This change expanded the codes from a maximum of ten options to a set of 884 codes. The chart was used to characterize the following nine traits: stem color (StemC), berry color (BerryC), primary flower color (PCFlower), primary tuber skin color (PCTuberskin), secondary tuber skin color (SCTuberskin), primary tuber flesh color (PCTuberflesh), secondary tuber flesh color (SCTuberflesh), primary sprout color (PCSprout), and secondary sprout color (SCSprout). The phenotypic RHS data for the accessions studied are provided in Supplementary File S2.
+
+
+%secondary flower color (SCFlower),
+% 10 traits o 9 % Secondary color of the flower no esta???
+
+
+
+%\paragraph{HCL space }
+
+Moreover, the color characterization using the RHS color chart was converted to the Hue, Chroma, and Lightness (HCL or LCH) color space, as this model is closely aligned with human color perception and has been used in previous studies on potato color \citep{caraza2020image}.  The values of these LCH traits were derived from the transformation of the values of the potato color traits, measured using the Royal Horticultural Society (RHS) fifth edition color chart (http://rhscf.orgfree.com/) \citep{voss2002royal}, into the three components: L, C, and H, of the Commission Internationale de l'Éclairage (CIE) LCH or CIE{*}L{*}C{*}h color space. Consequently, three components were obtained for each potato color trait, which will be referred to as LCH traits. Thus, the nine potato color traits were transformed into 27 LCH traits, which were used for genomic analyses 
+
+
+\subsubsection*{Correlation between two color descriptors}
+Two descriptors with different numbers of codes were used to characterize the color traits in CCC in different years. The correlation between the evaluations of both descriptors was calculated for each of the nine color traits using Cramer's V statistic \citep{Lyman1986}. Cramer's V measures the strength of the association between two qualitative variables, with values ranging from 0 to 1. Values below 0.6 indicate a weak association, while values of 0.6 or higher indicate a medium to strong association. To study the genetics underlying color, we selected traits with a medium-to-strong association, indicating genetic influence.
+
+
+\subsubsection*{Linking Color to Nutritional and Nutraceutical Variables}
+
+This study also examined the association between color traits and nutritional and nutraceutical values using data from a previous study \citep{berdugo2023phenotypic}. The nutritional traits of the potatoes were represented by the Ascorbic Acid Content (AAC), while the nutraceutical traits were: Total Phenol Content (TPC) and Antioxidant Activity (measured by 2.2-Diphenyl-1-picrylhydrazyl Radical Scavenging Activity - DPPH and Ferric Reducing Antioxidant Power - FRAP assays). The methodologies implemented to quantify these traits can be found in Berdugo-Cely et al. (2023). Given that the nutritional and nutraceutical variables were continuous, and the color traits were categorical, the determination coefficient was applied as a measure of association \citep{nagelkerke1991note}. To evaluate these associations, data from 282 Andigenum accessions in the CCC collection, which included information on both sets of traits, were analyzed.
+
+
+\subsection{GWAS analysis \label{subsec:GWAS-process} }
+
+% especificar metodologia de GWAS
+%1-Control de Calidad de datos
+%2-Parametros, Herramientas citar
+%3-Estructura como se definio
+
+
+
+A previous GWAS study by \cite{Berdugo2017} employed the same genetic dataset and color descriptors as those defined by \cite{gomez2000guia}. In contrast, the present study used the RHS color chart as a phenotype for color characterization, increasing the number of trait values from 30 to 884, thus achieving greater resolution.
+
+We utilized MultiGWAS \citep{Garreta2021}, a tool that integrates the outputs from multiple GWAS methods. Specifically, we incorporated the results from GWASpoly v1.3 \citep{Rosyara2016} for tetraploid genotypes and GAPIT v3 \citep{Tan2016} for diploid genotypes. The analysis was conducted using the MultiGWAS Full Model (Q+K), which controls for population structure (Q, typically derived from principal component analysis) and kinship (K, based on a genetic relatedness matrix), thereby reducing the likelihood of false-positive associations.
+
+In MultiGWAS, each tool implements a mixed linear model (MLM) (Phenotype ~ Genotype + Q + K), but with method-specific adjustments. GWASpoly adapts the MLM for polyploid data, incorporating population structure and kinship as fixed and random effects, respectively. GAPIT employs a standard MLM, treating the population structure (Q) as a fixed effect (e.g., from PCA) and kinship (K) as a random effect via its kinship matrix. By unifying these approaches, MultiGWAS robustly controls for population stratification and relatedness while detecting marker-trait associations across ploidy levels (diploid and tetraploid).
+
+
+
+
+To address the issue of multiple testing, the MultiGWAS tool applies the Bonferroni correction. However, instead of adjusting the \textit{p-values}, MultiGWAS adjusts the threshold to determine a significant \textit{p-value}. Specifically, this threshold is set to $\alpha/m$, where $\alpha$ represents the significance level and $m$ is the number of tested markers from the genotype matrix. The CMPlot library \citep{CMPlot} was used to generate Manhattan and Circos plots to visualize significant SNP markers.
+
+
+%PAULA - revisa si esto del GSCORE se presenta en los resultados
+\subsubsection*{Candidate Marker Identification \label{score}}
+
+
+Given the evaluation of multiple traits and the integration of results from the four GWAS tools in MultiGWAS, we developed a proprietary scoring function called GSCORE. This function was designed to rank markers by incorporating the outputs from the MultiGWAS. Specifically, GSCORE selected the top 50 markers with the lowest p-values from each tool, resulting in 100 markers (2 tools × 50 markers). GSCORE is calculated as the sum of three weighted terms: inflation factor (I), contributing 70\% of the score. Replicability (R) accounts for 10\%, and significance (S) accounts for the remaining 20\%. The scoring function is represented by the following equation:
+
+\begin{center}
+$GSCORE(M)=0.7*I+0.1*R+0.2*S$
+\par\end{center}
+
+ $I$ is the inflation factor score, defined as $I=1-|1-\lambda(M)|$, where $\lambda(M)$ is the inflation factor for marker M. This score is the highest when $\lambda(M)$ is close to 1. In addition, $R$ is the number of SNPs shared among the three GWAS tools. Finally, $S$ is a binary value (1 or 0) that indicates whether the SNP is significant (p-value < threshold). Marker $M$ achieves a high $GSCORE$ when it has an inflation factor $\lambda(M)$ close to one, identifies a large number of shared SNPs across tools, and is statistically significant. In contrast, the score is low if $\lambda(M)$ is either too low (close to 0) or excessively high, identifies few shared SNPs, or is not significant. In other scenarios, the score is determined by a balance between the inflation factor, shared SNP count, and significance. This approach prioritizes markers that are statistically robust, consistent across tools, and highly significant.
+
+
+\subsubsection*{Marker annotation\label{subsec:OwnScoreFunction}}
+Markers were annotated by taking information from the Potato Genome Sequencing Consortium (PGSC) public data based on the double monoploid \textit{S. tuberosum} Group Phureja from assembly DMv6.1\citep{Pham2020} obtained from the SpudDB website. Annotation was performed by associating marker identifiers with information from both the high confidence gene models annotation, the InterProScan assigned GO terms for the working gene models, the InterProScan search results for the working gene models, and the SolCAP 69 K SNP positions on the DMv6.1 assembly available in SpudDB. Furthermore, for each trait, the amino acid sequences were analyzed using BlastKOALA \citep{kanehisa2016blastkoala} for KEGG mapping to identify common functional categories among the significant markers.
+
+\subsection{Heritability Estimation}
+Narrow-sense heritability ($h{{}^2}$), defined as the proportion of phenotypic variance explained by additive genetic effects \citep{Campos2015}, was estimated for each of the 21 LCH components derived from color traits. We used Bayesian Ridge Regression (BRR), implemented in the \texttt{BGLR} R package \citep{Campos2014}, because the color-related traits analyzed in this study are expected to follow a polygenic architecture, with many loci of small effect contributing additively to the phenotype.
+
+BRR assumes normally distributed genetic effects across markers and estimates heritability by repeatedly sampling the additive genetic variance ($\sigma_{a}^{2}$) and residual variance ($\sigma_{e}^{2}$) through a Bayesian process. The model was run for 15,000 iterations, with a burn-in of 5,000 and thinning every 5 steps. Heritability was computed at each iteration as:\\
+\[
+h{{}^2}=\dfrac{\sigma_{a}^{2}}{\sigma_{a}^{2}+\sigma_{e}^{2}}
+\]
+
+This procedure yields a posterior distribution of heritability values for each trait, rather than a single point estimate. From this distribution, we report the posterior mean and the 95\% credible interval. Unlike confidence intervals from frequentist methods, a Bayesian 95\% credible interval indicates the range within which the true $h{{}^2}$ value lies with 95\% probability, given the data and model.
+
+\subsection{Genomic Prediction (GP)}
+We applied Genomic Prediction (GP) to estimate the genetic potential of individuals for each of the 21 LCH color trait components. A total of seven statistical models were used, spanning parametric, semiparametric, and Bayesian approaches:
+\begin{itemize}
+\item \textbf{Parametric}: Genomic Best Linear Unbiased Prediction (GBLUP)
+\item \textbf{Semiparametric}: Reproducing Kernel Hilbert Spaces (RKHS)
+\item \textbf{Bayesian}: Bayesian Ridge Regression (BRR), Bayesian LASSO (BL), Bayes A, Bayes B, and Bayes C
+\end{itemize}
+All models were implemented using the \texttt{BWGS} R package \citep{Charmet2020}. Predictive performance was assessed via 5-fold cross-validation, repeated five times for each trait. Predictive ability was measured as the Pearson correlation between observed phenotypes and genomic estimated breeding values (GEBVs) across validation folds. All model parameters were set to the default values provided by the BWGS library.
+
+\subsubsection{GP using marker subsets}
+
+
+To determine the optimal number of markers for genomic prediction (GP) of each LCH color trait component, GP was performed using subsets containing between 1\% and 100\% of the markers. Markers were selected based on GWAS results and prioritized using our custom GSCORE scoring function (see Section \ref{score}). The aim was to assess whether predictive ability could be improved with a reduced marker set.
+
+
+
+
+
+
+
+
+\section{Results}
+
+
+
+All traits displayed distinct distribution patterns across the three components, with varying amounts of available data (Supplementary Figure S2). Component H showed the widest distribution for 8 of the 9 traits, whereas Components L and C exhibited similar ranges for 7 of the 9 traits and displayed bimodal distributions in 5 of them, including both tuber skin color traits. Berry color showed the narrowest distribution (0–120) across all three components, while the remaining eight traits spanned a broader range (0–350). Since no outliers were detected, all available data were retained for analysis.
+
+Regarding data availability, 7 of the 9 traits had data for more than 90\% of accessions. The two exceptions—secondary color of the tuber skin and tuber flesh—had fewer records because some accessions lacked these secondary colors. Nevertheless, even the trait with the least data had information from 94 accessions.
+
+
+\subsection{Correlation between descriptors}
+
+The correlations between color trait values measured using the two color descriptor systems (Figure \ref{fig:Correlations-years}A) showed that only berry color and primary tuber flesh color had weak correlations and were therefore excluded from the genetic analysis. In contrast, the remaining seven color traits exhibited moderate to strong correlations, with values ranging from 0.65 to 0.97. While some traits were correlated with each other, most of the moderate to strong correlations, as expected, were concentrated along the diagonal of the correlation matrix. Notably, strong correlations were observed between primary and secondary tuber skin colors, between primary tuber skin color and both primary and secondary tuber flesh colors, and between primary and secondary sprout colors.
+
+
+
+
+%shows the correlations between the values of the color traits measured in the first and second year, where high correlations ($>$70\%) are observed for the traits CPBrote, CPFlor, CPTuber, and CSBrote; good correlations ($>$50\%) for CPulpa, CSCarne, CSTuber, and CTallo; and a low correlation for the trait CBaya.
+
+
+\begin{figure}[h]
+    \centering
+    
+    %\includegraphics[width=12cm]{Figures/Correlacion_Traits.v2.png}
+    \includegraphics[width=12cm]{Figures/FigPanel_correlacion.png}
+    \includegraphics[width=12cm]{Figures/F3_v4.png}
+\caption{\textbf{Correlation and determination coefficients of RHS potato color traits in CCC accessions.} \textbf{A.} Heatmap showing the correlation matrix of potato color traits in CCC accessions, derived form  descriptors by \cite{gomez2000guia} and measured with RHS \citep{voss2002royal} color chart. The color bar is located in the top right, with blue indicating low correlation values and red representing high correlation values. \textbf{B.} Heatmap showing the determination coefficient between nutritional (AAC) and nutraceutical (TPC, DPPH, and FRAP assay reported by \citep{berdugo2023phenotypic} components and potato RHS color traits.  The color bar is located at the top right, with the intensity of green representing the determination coefficient. \label{fig:Determination coefficient} \label{fig:Correlations-years}}. 
+
+\end{figure}
+
+%PAULA acá figuras entre parentesis
+
+\subsubsection{Linking Color to Nutritional and Nutraceutical Variables}
+In Figure \ref{fig:Determination coefficient}B, the heatmap presents the determination coefficient $R^2$ between the color traits measured using the RHS color scale and nutritional/nutraceutical variables. $R^2$ below 0.3 reflect a weak association (blue cells), while $R^2$ between 0.3 and 0.51 reflects a moderate association between color traits and nutritional variables (yellow and red). Three specific traits—the secondary color of the tuber flesh and the primary and secondary colors of the tuber skin—exhibited notable associations with nutritional variables. Antioxidant activity (measured using FRAP and DPPH assays) showed the strongest correlation with these traits. Additionally, Total Phenol Content and Ascorbic Acid Content demonstrated the highest association with the primary color of the tuber skin. Stem color, meanwhile, showed a moderate association with antioxidant activity and Total Phenol Content.
+
+
+
+
+
+
+
+
+\subsection{GWAS  Analysis}
+
+%\subsubsection{SNPs associated with LCH traits}
+
+ GWAS analysis identified 21 significant SNPs associated with five traits: ten related to the secondary color of the tuber flesh, four to the primary color of the flower,  three to the primary color of the sprout, two to the secondary color of the sprout, and two to the stem color (Table \ref{tabsnps} and Figure \ref{fig:GWAS-Top-Markers-GSCORE} ). The Hue component and the secondary color of the tuber flesh showed the most significant SNP associations, which were also supported by previous reports \citep{pandey2022genomic,riveros2022uncovering,sharma2024genotyping,parra2019chromosomes}. Of the 21 SNPs identified, one was previously reported as direct associations with potato color traits, while 11 were located within 1 Mb of loci (less than LD reported based on GBS data \citep{sharma2024genotyping,Berdugo2017}) previously reported for color, nutritional, or other tuber-related traits (Table \ref{tabsnps} and  Supplementary Table 1). In other words, 57\% of the SNPs reported are consistent with the literature, while the other half should be studied.   
+
+
+The 21 associated SNP markers are annotated with 21 genes, represented by a total of 33 transcripts.  A total of eight functional pathway categories were identified based on genes annotated with significant SNPs: seven belonged to the metabolism category and one to the genetic information processing category. Information on the primary annotations linked to these markers, as retrieved from the SPUD database, is provided in Supplementary Table 1, and the specific functional categories per trait are provided in Supplementary Table 2. 
+
+
+%A Circos plot (Figure S3) combines the data for the five traits and presents the density of SNP markers for chromosomes, allowing the visualization of SNP co-occurrence across different traits.
+% The Manhattan plots corresponding to the five traits with significant SNPs are displayed in Figure \ref{fig:GWAS-Top-Markers-GSCORE} (A–E). 
+
+
+\begin{figure}[H]
+\begin{centering}
+\begin{center}
+%\includegraphics[width=14cm]{Figures/Manhattan.png}
+\includegraphics[width=16cm]{Figures/Manhattan3.png}
+\par\end{center}%
+
+\par\end{centering}
+\caption{\textbf{Manhattan plots of markers associated with LCH traits.} Colors indicate significant SNPs for each color component: A. StemC, B. PCFlower, C. SCTuberflesh, D. PCSprout, E. SCSprout. Direct associations previously reported are highlighted in green, while the other references correspond to genes linked to tuber traits located near the identified SNPs, with lines connecting SNPs to their respective references\label{fig:GWAS-Top-Markers-GSCORE}}
+\end{figure}
+
+
+
+
+\begin{landscape}
+\begin{table}[]
+\begin{tabular}{lllllllll}
+\hline 
+SNP                              & Trait (HCL)                             & Tool                            & Chr               & Position                          & P value                         & $R^2$                          & Gene Id  DMv6.1                              & References                                                                   \\
+\hline
+\hline
+\rowcolor[HTML]{FFFFD7} 
+c2\_14623 &SCTuberflesh (H) &GWASpoly &1 &67,822,946 &1.07E-06 &0.21 &DM.01G028040 &\citep{sharma2024genotyping}\\
+\cellcolor[HTML]{FFFFD7}c1\_4666                         & \cellcolor[HTML]{FFFFD7}SCTuberflesh (H)                        & \cellcolor[HTML]{FFFFD7} GWASpoly & \cellcolor[HTML]{FFFFD7}1                        & \cellcolor[HTML]{FFFFD7}75,668,861                        & \cellcolor[HTML]{FFFFD7}1.55E-07                        & \cellcolor[HTML]{FFFFD7}0.23                        & \cellcolor[HTML]{FFFFD7}DM.01G036130                        & \cellcolor[HTML]{FFFFD7}\textbf{($\sim$wd40)} \citep{liu2020wd40,sajeevan2023comprehensive}                            \\
+\rowcolor[HTML]{FFFFD7} 
+c1\_730                          & SCTuberflesh (H)                        & GWASpoly                        & 1                        & 78,044,268                        & 9.12E-07                        & 0.21                        & DM.01G039330                        & \citep{sharma2024genotyping}                                                        \\
+\rowcolor[HTML]{FFFFD7} 
+c2\_2551                         & SCTuberflesh (H)                        & GWASpoly                        & 1                        & 78,177,940                        & 9.12E-07                        & 0.21                        & DM.01G039490                        & \citep{sharma2024genotyping}                                                        \\
+\rowcolor[HTML]{FFFFD7} 
+c1\_11495                        & PCFlower (H,L)                          & GWASpoly                        & 2                        & 24,792,151                        & 4.17E-06                        & 0.03                        & DM.02G009890                        & \citep{sharma2024genotyping,Berdugo2017}\\
+c1\_11544                        & SCTuberflesh (H)                        & GWASpoly                        & 2                        & 26,621,058                        & 7.41E-07                        & 0.21                        & DM.02G011880                        &                                                                              \\
+\rowcolor[HTML]{FFFFD7} 
+c2\_27439                        & StemC (H)                               & GAPIT                           & 2                        & 34,015,955                        & 1.23E-05                        & 0.03                        & DM.02G019820                        & \textbf{($\sim$GST)}\citep{riveros2022uncovering}                                          \\
+\rowcolor[HTML]{FFFFD7} 
+c1\_8113                         & SCTuberflesh (H)                        & GWASpoly                        & 2                        & 37,793,674                        & 2.40E-07                        & 0.22                        & DM.02G024500                        & \textbf{($\sim$F3H)}\citep{riveros2022uncovering}                                          \\
+\rowcolor[HTML]{DDE8CB} 
+c1\_7964                         & PCFlower (L)                            & GWASpoly                        & 2                        & 38,139,240                        & 6.31E-07                        & 0.04                        & DM.02G024900                        & \textbf{(DFR)}\citep{riveros2022uncovering}                                          \\
+\rowcolor[HTML]{FFFFD7} 
+c1\_11459                        & StemC (C )                              & GAPIT                           & 2                        & 45,124,985                        & 1.11E-05                        & 0.03                        & DM.02G033700                        & \citep{sharma2024genotyping,berdugo2023phenotypic,Berdugo2017}\\
+c2\_29450                        & SCTuberflesh (H)                        & GWASpoly                        & 3                        & 5,231,620                         & 8.51E-09                        & 0.26                        & DM.03G004830                        &                                                                              \\
+\rowcolor[HTML]{FFFFD7} 
+c1\_8194                         & PCFlower (L)                            & GWASpoly, GAPIT                 & 3                        & 55,211,205                        & 7.50E-06                        & 0.03                        & DM.03G030880                        & \citep{pandey2022genomic}                                                        \\
+\rowcolor[HTML]{FFFFD7} 
+c2\_21934                        & SCSprout(C,L)                          & GAPIT                           & 4                        & 5,765,944                         & 2.40E-08                        & 0.05                        & DM.04G005270                        & \textbf{($\sim$MYB)}\citep{sharma2024genotyping,riveros2022uncovering}                      \\
+c2\_36859                        & SCTuberflesh (H)                        & GAPIT                           & 7                        & 3,398,145                         & 3.39E-06                        & 0.19                        & .DM.07G003030                        &                                                                              \\
+c2\_36872                        & SCTuberflesh (H)                        & GWASpoly, GAPIT                 & 7                        & 3,452,120                         & 5.04E-08                        & 0.24                        & DM.07G003060                        &                                                                              \\
+c2\_32702                        & PCFlower (H)                            & GWASpoly, GAPIT                 & 8                        & 1,899,939                         & 5.66E-08                        & 0.05                        & DM.08G001440                        &                                                                              \\
+c2\_51974                        & SCSprout (C,L)                          & GAPIT                           & 8                        & 2,472,934                         & 4.64E-12                        & 0.08                        & DM.08G001790                        &                                                                              \\
+\rowcolor[HTML]{FFFFD7} 
+c1\_11907                        & SCTuberflesh (H)                        & GAPIT                           & 9                        & 58,172,429                        & 4.17E-06                        & 0.19                        & DM.09G022590                        &  () \citep{parra2021pathway}                                                                           \\
+c1\_11237                        & PCSprout (L)                            & GAPIT                           & 11                       & 13,277,951                        & 4.78E-06                        & 0.03                        & DM.11G011980                        &                                                                              \\
+c1\_5936                         & PCSprout (L)                            & GWASpoly, GAPIT                 & 11                       & 28,989,434                        & 2.40E-06                        & 0.04                        & DM.11G015780                        &                                                                              \\
+c1\_5940                         & PCSprout (C,L)                          & GWASpoly, GAPIT                 & 11                       & 29,258,142                        & 2.19E-06                        & 0.04                        & DM.11G015820                        &       \\                                                                \hline      
+\end{tabular}
+
+\caption{\textbf{Significant SNPs associated with potato color traits (HCL)}, including trait, analysis tool, chromosome, genomic position, p-value, proportion of variance explained ($R^2$), corresponding gene annotations (DM v6.1), and supporting references. SNPs highlighted in yellow are located near previously reported genes associated with tuber traits, while one in green represents a direct association previously reported for color. }
+    \label{tabsnps}
+\end{table}
+\end{landscape}
+
+
+Notably, chromosome 2 accounted for 28.5\% of the significant SNPs, followed by chromosomes 1 and 11, each contributing 19\% and 14.29\%, respectively. Two of the chromosomes with the highest number of significant SNPs have previously been reported to harbor loci involved in potato pigmentation, with chromosomes 2 and 11 linked to the synthesis of red and blue anthocyanins \citep{van1993identification,riveros2022uncovering}.
+
+ 
+
+
+
+
+
+
+
+%\subsubsection{Previous color and nutritional studies}
+
+
+
+One associated SNP was located within the Dihydroflavonol reductase gene DFR (DM.02G024900) at the R locus,  known to control the production of red anthocyanins\citep{de2003allele,riveros2022uncovering} (Figure \ref{fig:GWAS-Top-Markers-GSCORE} B). In addition, a gene on chromosome 2, located near both DFR and Flavanone-3-hydroxylase (F3H; DM.02G024500), was associated with the secondary color of tuber flesh and may form part of a co-regulatory region. A locus on chromosome 2 near 45 Mb has also been previously associated with tuber skin brightness \citep{sharma2024genotyping}, secondary tuber flesh color \citep{Berdugo2017}, and with Total Phenol content \citep{berdugo2023phenotypic}. Chromosome 2 thus harbors multiple loci linked to color traits.
+
+On chromosome 1, we detected a locus associated with the secondary color of tuber flesh, previously reported as likely involved in anthocyanin biosynthesis and pigmentation regulation via a WD40-like regulatory protein (DM.01G036130) \citep{liu2020wd40, sajeevan2023comprehensive}. Furthermore, a SNP on chromosome 3 at ~55 Mb corresponded to a major QTL reported for purple skin and tuber flesh color \citep{pandey2021genetic, sharma2024genotyping}. Additional loci were found in proximity to QTLs for other tuber-related traits, such as eye depth, average tuber depth, and skin brightness \citep{sharma2024genotyping,pandey2022genomic}. These results confirm that the genes involved in coloration in the Andigenum group are consistent with previous potato studies, including loci linked to nutraceutical traits \citep{berdugo2023phenotypic,riveros2022uncovering,parra2019chromosomes}. However, 48\% of the SNPs identified have not been reported in earlier studies, highlighting the need to further explore the Andigenum group.
+
+
+Moreover, GWASpoly and GAPIT identified 14 and 12 significant SNPs, respectively, with six SNPs jointly detected by both tools, representing 28.57\% of the total. Although no SNPs were shared across different traits, four SNPs were associated with distinct HCL components within the same trait. A Circos plot (Figure S3) combines the data for the five traits and presents the density of SNP markers for chromosomes, allowing the visualization of SNP co-occurrence across different traits.
+
+
+\subsection{Heritability of Color Traits}
+Figure \ref{fig:Heritabilities_and_Abilities}A summarizes the posterior distributions of narrow-sense heritability ($h^2$) for 21 LCH components across seven color traits in the Andigenum group of \textit{Solanum tuberosum}. Each boxplot represents the distribution of $h{{}^2}$ values obtained from Bayesian Ridge Regression (BRR), showing the median, interquartile range, and 95\% credible interval.
+
+Most primary color traits---particularly \texttt{PCFlower.H}, \texttt{StemC.L}, and \texttt{PCSprout.C}---exhibited moderate to high heritability, with means exceeding 0.55. The highest heritability was observed in the hue component of secondary tuber flesh color (\texttt{SCTuberflesh.H}), with a mean near 0.98, indicating strong genetic control.
+
+In contrast, several secondary color traits such as \texttt{SCSprout.C}, \texttt{SCSprout.H/L}, and \texttt{SCTuberskin.C} displayed lower heritability values (posterior means between 0.20 and 0.35), suggesting a greater influence of environmental or non-additive factors.
+
+Overall, \texttt{StemC}, \texttt{PCFlower}, and \texttt{PCSprout} traits consistently showed moderate to strong heritability across their Chroma, Hue, and Lightness components, supporting their potential as targets for genomic selection.
+
+\subsection{Genomic Prediction Results}
+Figure \ref{fig:Heritabilities_and_Abilities}B shows the predictive abilities of the seven genomic prediction models for each of the 21 LCH trait components. Predictive ability is defined as the correlation between observed phenotypic values and GEBVs across cross-validation folds.
+
+The highest predictive abilities were observed in traits such as \texttt{PCFlower.H}, \texttt{StemC.L}, and \texttt{PCSprout.C}, with mean correlations above 0.70. Other primary color traits---including \texttt{PCTuberskin.C} and \texttt{PCSprout.L}---showed moderate predictive performance.
+
+Traits with the lowest predictive abilities included several secondary color traits, such as \texttt{SCSprout.H}, \texttt{SCTuberskin.C}, and \texttt{SCTuberflesh.L}, all with mean correlations below 0.40. These results reflect the patterns observed in the heritability estimates (panel A), where traits with higher heritability generally showed greater predictive accuracy. However, the secondary color of the tuber flesh showed a marked deviation, explained by the limited data available for this trait (only 94 accessions characterized) combined with the cross-validation strategy used to estimate predictive ability, which resulted in low predictive values for the three components ($<0.35$).
+
+Model performance varied across traits, with BRR, GBLUP, and RKHS performing best for different subsets of traits (Figure \ref{fig:Heritabilities_and_Abilities}B).
+
+
+\begin{figure}[H]
+\begin{centering}
+A. Estimated Heritabilities
+\par\end{centering}
+\begin{centering}
+\includegraphics[viewport=0bp 0bp 792bp 340bp,clip,width=13cm]{Figures/FigHeritability-BRR-Boxplots}
+\par\end{centering}
+\begin{centering}
+B. Predictive Abilities
+\par\end{centering}
+\begin{centering}
+\includegraphics[viewport=0bp 0bp 792bp 340bp,clip,width=13cm]{Figures/Fig_Predictive_ability-HCLs-Boxpplots}
+\par\end{centering}
+\caption{\textbf{Heritability and Predictive Ability for LCH Traits.} Each boxplot corresponds to one of the 21 LCH color trait components in \textit{Solanum tuberosum} Andigenum group. Traits are grouped by color feature (e.g., flower, sprout, skin, stem) and by component (Chroma: C, Hue: H, Lightness: L). \textbf{A. Posterior distributions of narrow-sense heritability ($h^2$),} estimated using Bayesian Ridge Regression (BRR) with 15,000 iterations, 5,000 burn-in, and thinning every 5 steps. Posterior medians are annotated above each box. \textbf{B. Predictive abilities of seven genomic prediction models.} Values represent the correlation between observed phenotypes and GEBVs across repeated 5-fold cross-validation. The mean predictive ability is shown above each boxplot, and the model achieving the best performance per trait is indicated below.}\label{fig:Heritabilities_and_Abilities}
+\end{figure}
+
+\subsubsection{GP using marker subsets}
+
+Genomic prediction was performed using marker subsets representing 1\%–100\% of the 4,641 SNPs. Predictive ability, assessed by the Pearson correlation between observed phenotypes and genomic estimated breeding values (GEBVs), varied by trait and marker density (see Figure S4).
+
+In general, predictive ability increased rapidly with marker density up to 40\%-50\% of the total set, after which gains plateaued, indicating diminishing returns. This pattern held across most color traits and LCH components (Hue, Chroma, Lightness), suggesting that a moderate number of well-distributed, informative SNPs can achieve predictive performance comparable to that of the full marker set.
+
+Stem color and primary flower color consistently showed higher predictive abilities, with correlations approaching 0.75 at full marker density. In contrast, secondary traits with lower data availability (Fig S2) —such as secondary tuber flesh (n=94), secondary tuber skin color (n=473), and secondary sprout color (n=542)—exhibited lower predictive values. Secondary color results may still be influenced by the cross-validation strategy and small sample sizes, even when larger marker sets are used. This variability highlights differences in genetic architecture, with some traits likely governed by major loci and others shaped by more polygenic and complex effects.
+
+These results support the feasibility of cost-effective genomic selection for tetraploid \textit{Andigenum} potatoes by using an optimized SNP subset. The top 50\% of markers, selected via the GSCORE metric (Section 2.3), effectively captured the relevant genetic variation, enabling accurate predictions while reducing the computational demand.
+
+
+
+
+
+
+%% Figura suplementaria
+
+
+
+\section{Discussion}
+
+
+
+% Missing data - SCTuberflesh
+
+% Contenido
+% 1 - Falta de estudios en andígena - CCC como cierre de brechas - snps que no tienen algo reportado en literatura (Paula)
+The Andigenum group remains largely unexplored \citep{ghislain2020genes}, as potato breeding has relied on only a few representatives from this upland adapted group \citep{spanoghe2022genetic}, leaving much of its extensive diversity untapped. As evidence, numerous potato genomes have been published in recent years \citep{zhou2020haplotype, campoy2020gamete, sun2022chromosome,  bao2022genome}, but only a small fraction belong to the Andigenum group \citep{kanehisa2016blastkoala, diacolg3}, even within recent pangenome initiatives \citep{hoopes2022phased,guo2023pangenome,Bozan2023} the percentage of Andigenum accessions representatives is less than 4\%. Research on Andigenum potatoes may uncover novel genes, as over 80\% of the genes under selection in \textit{Solanum tuberosum} cultivars (Chilotanum) and the Andigenum group are population-specific \citep{hardigan2017genome}. The Andigenum thus provides a broad reservoir of alleles for potato breeding. The Andigenum accessions from the CCC have been reported to exhibit high genetic diversity \citep{Berdugo2017}, underscoring both the role of germplasm banks in preserving traditional cultivars and the potential benefits of investigating conserved materials.
+
+
+
+
+\subsection{Testing associated genes with dark pigmentation}
+
+% 2 - Algunos de esos genes se van a probar estan probando - caracterizando proyecto de investigación fundamental  (Jhon )
+
+The first step toward understanding and promoting the consumption of these types of potatoes is the recognition of their various properties and traits through genetic characterization. In this way, our research team is currently studying the genetic diversity of the Colombian Central Collection of potatoes, with a particular focus on native Andean genotypes that produce tubers with dark pigmentation. At present, we are quantifying traits related to nutritional value, such as zinc, iron, and ascorbic acid contents, to dissect their genetic bases and select genetic materials that can be used as parents in potato breeding programs to develop Colombian biofortified varieties. Additionally, within the same initiative, we aim to validate candidate genes associated with color and nutritional traits identified in our previous research initiatives \citep{berdugo2023phenotypic,Berdugo2017}. These genes are currently being validated through biotechnological approaches, including gene expression analyses and genome editing using Clustered Regularly Interspaced Short Palindromic Repeats (CRISPR)  \citep{Berdugo2024}.
+
+The genes identified in the present study also require validation through similar biotechnological strategies. Those confirmed to be associated with tuber color traits could be used to develop molecular markers, which can then be integrated into molecular breeding programs to facilitate the selection of potato genotypes with specific pigmentation patterns.
+
+Finally, it is necessary to continue the genetic and phenotypic analysis of the Colombian Central Collection of potatoes under several approaches, including responses to biotic and abiotic stresses, since this collection constitutes the primary ex situ reservoir of genetic diversity for this species in Colombia.
+
+
+\subsection{How this study contributes to the conservation of threatened potato diversity}
+
+%3 - conservación - las papas nativas se están perdiendo. Como conocer esto puede aportar a estrategias de conservación in situ  (Zahara)
+
+The investigation of this study into the genetic architecture of color traits in potatoes is a fundamental contribution to the conservation of native varieties, many of which face accelerated genetic erosion in Colombia and the Andes due to their replacement by commercial varieties and the homogenization of production systems \citep{arcespatial,ellis2018genetic}. Identifying SNPs associated with color expression in different organs provides useful markers to strengthen the characterization and monitoring of diversity in ex situ collections. This facilitates the management of germplasm banks and the prioritization of accessions for conservation programs \citep{ellis2018genetic}. In contrast, dynamic conservation approaches that link germplasm banks with local communities allow ex situ and in situ conservation to be integrated into participatory processes \citep{luttringhaus2021dynamic}. Similarly, systematic monitoring and field conservation strategies help maintain and utilize the diversity of native potatoes in their territories of origin \citep{arcespatial,dawson2023identifying}. Thus, this knowledge integrates genomic tools with community-based approaches, contributing to the recovery, sustainable use, and revaluation of native potatoes in Colombia's Andean territories.
+
+
+
+\subsection {The opportunities of this study to future projects associated to decolonizing the food consumption and contribute with food security and local suverignty}
+
+% 4- Hacia el consumo - cultural. Herencias colonial. Reto decolonizar. Soberania.  (Zahara, Ivania)
+
+Studying the genetic diversity of native potatoes will contribute to their conservation and promote cultural revaluation and consumption. Pigmented potato varieties, particularly those with purple or black flesh, have a high content of bioactive compounds such as anthocyanins and carotenoids, which have a positive effect on human health \citep{burgos2020potato,vollmer2022world}. Moreover, dark potatoes have...xxxx. This study corroborates these results by linking the darkness of xxx to xxxxx and xxxx.
+
+Linking genetic knowledge to potato color and nutritional properties adds new insights into how potato varieties represent not only food, but also ancestral knowledge and cultural heritage \citep{galvis2022cultural}. However, the colonial legacy has significantly impacted the consumption of traditional food systems, such as potatoes, in Colombia and the region. For example, in Peru, it has been found that neocolonial practices have marginalized indigenous cultural knowledge toward Western preferences and marked standards devaluing some varieties because of their appearance, including color. 
+
+Despite the nutritional value of dark potato varieties, their consumption is not extended because colonial stereotypes link dark color with low-quality or low-value food (REF). 
+
+Linking genetic knowledge to potato color and nutritional properties can overcome cultural barriers and open differentiated markets that recognize the nutritional and cultural value of these varieties. Currently, in Colombia, some high-end restaurants have dark potatoes on their menus \citep{RadioNacional2022}. 
+
+Likewise, native potatoes should be understood as living heritage, reflecting centuries of peasant selection and management practices \citep{arcespatial,luttringhaus2021dynamic}. Thus, the challenge is to decolonize food consumption patterns that favor uniform industrial varieties to promote diverse diets that strengthen food sovereignty and resilience of Andean communities \citep{dawson2023identifying}.
+
+
+%%% Anterior
+% 1-EStudios previos de la CCC
+% 2- Estudios previos color y varialbes asociadas
+%PAULA hay cromosomas que otros estudios identifican relacionados con color - hay uno que coincide con lo que identificamos discutir acá - estudios previos
+
+% 3 - Diversidad y variablidad color en papas andígenas
+% 4- Variablidad de color - beneficios para la salud
+
+
+
+
+
+
+\section{Acknowledgments and Funding}
+
+
+The authors would like to thank the Corporación Colombiana de Investigación Agropecuaria (AGROSAVIA) for providing funding under project 1003075 (2025 BGA Documentación BG Vegetal). 
+ We thank the Minister of Science, Technology, and Innovation of the Republic of Colombia (previously COLCIENCIAS), for supporting the postdoctoral researcher L. Garreta at AGROSAVIA during 2019–2020 under the supervision of ICS and PHRH (Grant Number 811‐2019).  We thank the Gene bank staff for their commitment to collecting and maintaining the CCC. 
+
+\bibliography{referencias}% common bib file
+%% if required, the content of .bbl file can be included here once bbl is generated
+%%\input sn-article.bbl
+
+
+\end{document}

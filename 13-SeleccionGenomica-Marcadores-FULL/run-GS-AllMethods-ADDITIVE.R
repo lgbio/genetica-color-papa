@@ -7,6 +7,7 @@ library (ppGS)
 # Create configuration file multiple phenotypes
 #gs_configfile (type="multi")
 set.seed (123)
+
 gs_split ("inouts/genotipo.csv",
 		  "inouts/fenotipos.csv",
 		  outputDir="data-ADDITIVE")

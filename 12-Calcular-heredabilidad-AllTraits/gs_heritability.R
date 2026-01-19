@@ -1,1 +1,0 @@
-gs_heritability-TETRAPLOYD.R

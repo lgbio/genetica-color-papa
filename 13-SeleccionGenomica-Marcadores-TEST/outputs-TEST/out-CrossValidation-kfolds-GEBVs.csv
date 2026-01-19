@@ -1,0 +1,9 @@
+Prefix,HCL_component,Traits,Models,Predictive_ability
+CTallo,C,CTallo.C,BA,0.513
+CTallo,C,CTallo.C,BA,0.541
+CTallo,C,CTallo.C,BB,0.464
+CTallo,C,CTallo.C,BB,0.538
+CTallo,L,CTallo.L,BA,0.557
+CTallo,L,CTallo.L,BA,0.514
+CTallo,L,CTallo.L,BB,0.52
+CTallo,L,CTallo.L,BB,0.553
